@@ -1,7 +1,7 @@
-// Carousel.js
+// Carousel.jsx
 import React, { useState } from 'react';
 
-const images = [ /* Your image URLs */ ];
+const images = [ ];
 
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
