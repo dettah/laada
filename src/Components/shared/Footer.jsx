@@ -9,7 +9,7 @@ import LinkedIn from '../../assets/LinkedIn.png'
 const Footer = () => {
     return (
         <>
-            <div className='bg-[#0C0C0C] bg-opacity-90 h-[358px] px-20 pt-[60px] '>
+            <div className='bg-[#0C0C0C] bg-opacity-90 h-[358px] mt-36 px-20 mx-20 pt-[60px]'>
 
 
                 <div className=' flex justify-between '>

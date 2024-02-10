@@ -2,8 +2,9 @@ import React from 'react'
 import Logo from '../Logo'
 const NavBar = () => {
   return (
-    <div className='flex justify-between  py-2 items-center mb-10'>
-      <Logo/>
+
+    <div className='flex justify-between py-10 items-center px-20'>
+      <Logo />
 
       <div className='flex items-center justify-between w-[60%]' >
         <nav className='flex grow'>
