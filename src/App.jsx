@@ -16,6 +16,7 @@ import Vendor from "./pages/Vendor";
 import Partner from "./pages/Partner";
 import ScrollToTop from "./Components/ScrollToTop";
 import Com_BushMarket from "./pages/Com_BushMarket";
+import Stores from "./pages/Stores";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route exact path="/customer" element={<Customer />} />
         <Route exact path="/vendor" element={<Vendor />} />
         <Route exact path="/bushmarket" element={<Com_BushMarket />} /> 
+        <Route exact path="/stores" element={<Stores />} /> 
 
 
         {/* Add more routes as needed */}

@@ -32,8 +32,7 @@ const Vendor = () => {
 
     return (
         <div>
-            <h2 className='text-6xl mt-20 mb-10'>Want to become a global
-                <span>
+            <h2 className='text-6xl mt-20 mb-10'>Want to become a global <span className='text-[#E01A4F]'>
                     vendor?
                 </span>
             </h2>
