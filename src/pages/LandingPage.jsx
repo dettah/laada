@@ -1,6 +1,4 @@
 import React from 'react'
-import NavBar from '../Components/shared/NavBar'
-import Footer from '../Components/shared/Footer'
 import HeroBg from '../assets/heroBg.png'
 import school from '../assets/HeroRhombus/Schools.png'
 import print from '../assets/HeroRhombus/Printshop.png'
@@ -26,7 +24,6 @@ import LearnButton from '../Components/LearnButton'
 const LandingPage = () => {
   return (
     <div>
-      <NavBar />
 
       <div className='mx-20'>
         <div className='w-full h-[744px]bg-cover pt-[200px] h-screen rounded-[10px]' style={{ backgroundImage: `url(${HeroBg})` }}>
@@ -193,7 +190,6 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <Footer />
     </div>
   )
 }

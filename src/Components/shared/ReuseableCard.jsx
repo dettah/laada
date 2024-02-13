@@ -14,7 +14,6 @@ const ReuseableCard = ({heading, paragraph, imageUrl}) => {
         <LearnButton/>
       </div>
     </div>
-
   )
 }
 
