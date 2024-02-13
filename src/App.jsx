@@ -34,7 +34,7 @@ function App() {
         <Route exact path="/news-content" element={<NewsContent />} />
         <Route exact path="/customer" element={<Customer />} />
         <Route exact path="/vendor" element={<Vendor />} />
-        <Route exact path="/bush-market" element={<Com_BushMarket />} /> 
+        <Route exact path="/bushmarket" element={<Com_BushMarket />} /> 
 
 
         {/* Add more routes as needed */}
