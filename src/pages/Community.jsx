@@ -6,10 +6,23 @@ import customerPic from '../assets/customer.png'
 import vendorImage from '../assets/VendorImage.png'
 import partnerImage from '../assets/partnerImage.png'
 import BushMarket from '../Components/shared/BushMarket'
+import CommunityBottomStrip from '../Components/CommunityBottomStrip'
+import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 
 const Community = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+    };
 
     const dataCustomer = {
         headText: 'Who are you?',
@@ -31,7 +44,7 @@ const Community = () => {
 
     return (
         <div>
-            <div className='m-20'>
+            <div className='m-20 mt-0'>
                 <div className='w-full  bg-cover flex flex-col px-36 justify-center h-[480px] bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
                     <h2 className='  text-[64px] font-bold '>Communities</h2>
 
@@ -48,25 +61,32 @@ const Community = () => {
                 </div>
             </div>
 
-            <ReuseableCard
-                heading={dataCustomer.headText}
-                imageUrl={customerPic}
-                paragraph={dataCustomer.paraText}
-            />
+            <Link to={"/customer/"}>
+                <ReuseableCard
+                    heading={dataCustomer.headText}
+                    imageUrl={customerPic}
+                    paragraph={dataCustomer.paraText}
+                />
+            </Link>
 
-            <ReuseableCardOne
-                heading={dataVendor.headText}
-                imageUrl={vendorImage}
-                paragraph={dataVendor.paraText}
-            />
+            <Link to={"/vendor/"}>
+                <ReuseableCardOne
+                    heading={dataVendor.headText}
+                    imageUrl={vendorImage}
+                    paragraph={dataVendor.paraText}
+                />
+            </Link>
+            <Link to={"/partner/"}>
 
-            <ReuseableCard
-                heading={dataPartner.headText}
-                imageUrl={partnerImage}
-                paragraph={dataPartner.paraText}
-            />
+                <ReuseableCard
+                    heading={dataPartner.headText}
+                    imageUrl={partnerImage}
+                    paragraph={dataPartner.paraText}
+                />
+            </Link>
 
-            <BushMarket/>
+            <BushMarket />
+            <CommunityBottomStrip />
 
 
         </div>

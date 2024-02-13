@@ -55,7 +55,6 @@ const CarouselSlider = () => {
           <button className='flex items-center mt-1 gap-2 justify-center text-[#E01A4F] h-[28px] w-[103px] rounded border border-green-500 '>View now <img src={arrow} alt="carousel img" /></button>
         </div>
       </div> 
-      {/* Add more slides as needed */}
     </Slider>
   );
 };

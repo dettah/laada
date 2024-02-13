@@ -8,7 +8,7 @@ import Logo from '../Logo'
 const NavBar = () => {
   return (
 
-    <div className='flex justify-between py-10 items-center px-20'>
+    <div className='flex justify-between py-10 items-center px-20 bg-[#EBEBEB] '>
       <Logo />
 
       <div className='flex items-center justify-between w-[60%]' >

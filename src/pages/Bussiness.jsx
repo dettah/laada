@@ -55,7 +55,7 @@ const Bussiness = () => {
 
 
                     <Link to={"/network/"}>
-                        <p href="" className='text-[#E01A4F]'>Learn more</p>
+                        <button href="" className='text-[#E01A4F]'>Learn more</button>
                     </Link>
 
                 </div>

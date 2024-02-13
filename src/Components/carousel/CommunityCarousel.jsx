@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import market1 from '../../assets/market1.png'
 import market2 from '../../assets/market2.png'
+import arrowBack from '../../assets/left_arrow.png'
+
+import arrowForward from '../../assets/right_arrow.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -21,24 +24,23 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden mx-10 px-2 py-5 h-">
-      <div className="flex pl-2 gap-10 border justify-around" style={{ transform: `translateX(-${currentSlide * 10}%)`, transition: 'transform 0.5s ease' }}>
+    <div className="relative overflow-hidden mx-10  py-20  h-[calc(fit +)]">
+      <div className="flex gap-10 justify-around pl-[430px]" style={{ transform: `translateX(-${currentSlide * 10}%)`, transition: 'transform 0.5s ease' }}>
 
         {images.map((image, index) => (
-          <div>
-            <h3>Groceries</h3>
+          <div className='shadow-md ring-1 ring-gray-200 px-3 pb-3'>
+            <h2 className='text-3xl font-semibold text-left py-2'>Groceries</h2>
             <img key={index} src={image} alt={`Slide ${index + 1}`} className="max-w-[370px]" />
           </div>
         ))}
       </div>
 
-      <button className="absolute top-[calc(100% + 20px)] left-0 transform -translate-y-1/2" onClick={prevSlide}>
-        previous
-        <FontAwesomeIcon icon="fa-duotone fa-circle-chevron-left" />
+      <button className="absolute top-[90%] right-[60px] transform -translate-y-1/2" onClick={prevSlide}>
+        <img src={arrowBack} alt="" />
 
       </button>
-      <button className="absolute top-[calc(100% + 50px)] right-0 transform -translate-y-1/2" onClick={nextSlide}>
-        Next<FontAwesomeIcon icon="fa-duotone fa-circle-chevron-right" />
+      <button className="absolute top-[90%] right-0 transform -translate-y-1/2" onClick={nextSlide}>
+      <img src={arrowForward} alt="" />
       </button>
     </div>
   );

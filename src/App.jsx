@@ -11,10 +11,16 @@ import News from './pages/News';
 import NavBar from "./Components/shared/NavBar";
 import Footer from "./Components/shared/Footer";
 import NewsContent from "./pages/NewsContent";
+import Customer from "./pages/Customer";
+import Vendor from "./pages/Vendor";
+import Partner from "./pages/Partner";
+import ScrollToTop from "./Components/ScrollToTop";
+import Com_BushMarket from "./pages/Com_BushMarket";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <NavBar/>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
@@ -26,6 +32,10 @@ function App() {
         <Route exact path="/network" element={<Network />} />
         <Route exact path="/news" element={<News />} />
         <Route exact path="/news-content" element={<NewsContent />} />
+        <Route exact path="/customer" element={<Customer />} />
+        <Route exact path="/vendor" element={<Vendor />} />
+        <Route exact path="/bush-market" element={<Com_BushMarket />} /> 
+
 
         {/* Add more routes as needed */}
 

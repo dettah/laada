@@ -7,8 +7,8 @@ const ReuseableCard = ({heading, paragraph, imageUrl}) => {
         <img src={`${imageUrl}` }alt="" className='w-[664px] rounded-[8px]' />
       </div>
       <div className='w-[433px] text-left leading-[2.2] '>
-        <h3 className='font-semibold text-2xl mb-5'>{heading}</h3>
-        <p className='mb-4'>
+        <h3 className='font-semibold text-4xl mb-5'>{heading}</h3>
+        <p className='mb-4 text-xl leading-[1.5]'>
           {paragraph}
         </p>
         <LearnButton/>
