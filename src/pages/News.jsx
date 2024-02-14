@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react'
 import NewsCard from '../Components/NewsCard'
 import VendorImage from '../assets/VendorImage.png'
@@ -8,12 +9,25 @@ const News = () => {
     <div>
       <h2 className=' text-left mx-20 mt-24 mb-10 text-5xl font-bold '>Latest News</h2>
       <div className='flex flex-wrap justify-between  '>
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
+
+        <Link to={"/news-content/"}>
+          <NewsCard />
+        </Link>
+        <Link to={"/news-content/"}>
+          <NewsCard />
+        </Link>
+        <Link to={"/news-content/"}>
+          <NewsCard />
+        </Link>
+        <Link to={"/news-content/"}>
+          <NewsCard />
+        </Link>
+        <Link to={"/news-content/"}>
+          <NewsCard />
+        </Link>
+        <Link to={"/news-content/"}>
+          <NewsCard />
+        </Link>
       </div>
       <div className='flex justify-between px-40 py-20 bg-[#FEEEED] my-52 '>
 
