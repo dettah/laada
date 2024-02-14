@@ -43,11 +43,26 @@ const LandingPage = () => {
 
 
           <div className=' flex justify-center ' data-aos='fade-up'>
+
+
+          <Link to={"/bushmarket/"}>
             <img src={market} alt="school" />
-            <img src={market} alt="print" />
-            <img src={market} alt="stores" />
-            <img src={market} alt="Taxi" />
-            <img src={market} alt="see all" />
+          </Link>
+          <Link to={"/bushmarket/"}>
+            <img src={market} alt="school" />
+          </Link>
+          <Link to={"/bushmarket/"}>
+            <img src={market} alt="school" />
+          </Link>
+          <Link to={"/bushmarket/"}>
+            <img src={market} alt="school" />
+          </Link>
+          <Link to={"/bushmarket/"}>
+          <img src={seeAll} alt="see all" />
+          </Link>
+           >
+           
+
           </div>
         </div>
 

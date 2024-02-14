@@ -6,13 +6,13 @@ const NewsContent = () => {
     return (
         <div className='px-10'>
             <Link to={"/news/"}>
-                <div className='flex mt-16 mb-10'>
+                <div className=' w-fit flex mt-16 mb-10'>
                     <BackArrow />
                 </div>
             </Link>
-            <section className='flex'>
+            <section className='flex gap-10'>
 
-                <section className='min-w-[60%]'>
+                <section className='min-w-[70%]'>
 
                     <h3 className='text-left text-2xl'>Partners</h3>
                     <h2 className='text-left text-4xl'>Lorem ipsum dolor sit amet.</h2>
@@ -22,35 +22,44 @@ const NewsContent = () => {
                         Suscipit at similique illo nesciunt provident facilis architecto veniam, distinctio, eaque porro voluptatem obcaecati ducimus neque?
                     </p>
 
-                    <div>
-                        <h4>Catergory: Facebook, Policy</h4>
+                    <div className='text-left mt-20 font-semibold'>
+                        <h4 className='font-'>Catergory: Facebook, Policy</h4>
                         <h4>Tags: HortiNigeria, Greenport, Horticulture, Nigeria, Production</h4>
                     </div>
-                    <div>
-                        <h3>RELLATED NEWS</h3>
-                        <div></div>
+                    <div className='text-left'>
+                        <h3 className='text-2xl' >RELATED NEWS</h3>
+                        <p>lorem</p>
+                        <div>
+                            <h3>Balanced diet beyond Nigerian's reach as prices skyrocket</h3>
+                            <p>Olumide Omotayo . February 10, 2024</p>
+
+
+                        </div>
                     </div>
                 </section>
 
 
 
-                <aside>
-                    <div>
+                <aside className='flex flex-col items-start'>
+                    <div className='flex flex-col items-start gap-10 '>
 
-                        <h3>Topics</h3>
-                        <p>Agriculture</p>
-                        <p>Production</p>
-                        <p>Cosmetics</p>
-                        <p>Prices of goods</p>
-                        <p>Logistics</p>
-                    </div>
-                    <div>
-                        <h3>Featured news</h3>
-                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <div className='flex flex-col items-start gap-3 '>
+                            <h3>Topics</h3>
+                            <p>Agriculture</p>
+                            <p>Production</p>
+                            <p>Cosmetics</p>
+                            <p>Prices of goods</p>
+                            <p>Logistics</p>
+                        </div>
+                        <div className='text-left '>
+
+                            <h3 className='font-semibold '>Featured news</h3>
+                            <h2 className='text-2xl'>Lorem ipsum dolor sit amet consectetur.</h2>
+                        </div>
                         <div className=''>
 
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolor repudiandae fugiat quam dolorum cum dolorem, corporis eaque sequi dicta inventore aut assumenda eius unde delectus reiciendis doloribus sapiente dignissimos?</p>
+                        <p className='text-left' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolor repudiandae fugiat quam dolorum cum dolorem, corporis eaque sequi dicta inventore aut assumenda eius unde delectus reiciendis doloribus sapiente dignissimos?</p>
                     </div>
 
 
