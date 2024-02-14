@@ -8,9 +8,7 @@ import partnerImage from '../assets/partnerImage.png'
 import BushMarket from '../Components/shared/BushMarket'
 import CommunityBottomStrip from '../Components/CommunityBottomStrip'
 import { Link } from 'react-router-dom';
-// import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+
 
 
 

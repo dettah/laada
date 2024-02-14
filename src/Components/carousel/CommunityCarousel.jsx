@@ -5,9 +5,6 @@ import arrowBack from '../../assets/left_arrow.png'
 
 import arrowForward from '../../assets/right_arrow.png'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-
 
 
 const images = [market1, market2, market1, market2];

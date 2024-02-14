@@ -5,7 +5,7 @@ import print from '../assets/HeroRhombus/Printshop.png'
 import store from '../assets/HeroRhombus/Stores.png'
 import taxi from '../assets/HeroRhombus/LocalTaxi.png'
 import seeAll from '../assets/HeroRhombus/seeAll.png'
-import CarouselSlider from '../Components/carousel/CarouselSlider';
+// import CarouselSlider from '../Components/carousel/CarouselSlider';
 import oneClick from '../assets/oneClick.png'
 import linkage from '../assets/linkage.png'
 import layla1 from '../assets/layla.jpeg'
@@ -53,10 +53,10 @@ const LandingPage = () => {
         </div>
 
         <h2 className='text-[48px] font-semibold mt-28 mb-6 '>Top Bush Markets People Visit</h2>
-
+{/* 
         <div>
           <CarouselSlider />
-        </div>
+        </div> */}
 
 
 
@@ -98,7 +98,7 @@ const LandingPage = () => {
         </div>
 
         <div className='flex gap-5 mt-20' >
-          
+
           <div>
             <img src={marketWoman} alt="market woman" className='rounded-lg' data-aos='fade-right' />
           </div>
