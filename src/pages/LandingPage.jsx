@@ -85,7 +85,14 @@ const LandingPage = () => {
         <p className='text-center text-[48px] mt-36 leading-[1.3] px-40' data-aos='fade-up'>We celebrate your convenience! With our assisted market solution, you can now do your market shopping with ease when you connect with our <span className='text-[#E01A4F]'> trusted and reliable </span>agents to all your vendors across various city and local markets.</p>
 
 
-        <img src={linkage} alt="" className=' my-40  rounded-[10px] ' data-aos='fade-up' />
+        <img src={linkage} alt="" className=' mt-40 mb-5  rounded-[10px] ' data-aos='fade-up' />
+
+        <Link to={"/ma/"}>
+
+          <button className=' float-right border border-[#E01A4F] p-2 rounded hover:p-3 font-semibold '>
+            Connect now
+          </button>
+        </Link>
 
         <h3 className='font-semibold text-[48px] my-20  ' data-aos='fade-up'>One-Stop-Payment for all your shopping </h3>
 
