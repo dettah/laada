@@ -21,7 +21,7 @@ const Com_BushMarket = () => {
                     <p className='text-[20px]'>From farm to table, Your trusted food network</p>
                 </div>
                 <div className=' border-b-2 mx-[7.5rem] pb-[180px] border-[#BFBFBF] '>
-                    <p className=' text-2xl leading-[2]'>At Bush Market, we're more than just a marketplace , we're your digital neighborhood hub. Join our thriving community to stay in the loop on local insights, market trends, and exciting happenings in your area. Whether you're looking to buy, sell, or simply connect with neighbors, Bush Market has you covered. Sign up now and become part of our vibrant community</p>
+                    <p className=' pt-8 text-2xl leading-[2.5]'>At Bush Market, we're more than just a marketplace , we're your digital neighborhood hub. Join our thriving community to stay in the loop on local insights, market trends, and exciting happenings in your area. Whether you're looking to buy, sell, or simply connect with neighbors, Bush Market has you covered. Sign up now and become part of our vibrant community</p>
                 </div>
             </section>
             <section>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroBg from '../assets/heroBg.png'
 import school from '../assets/HeroRhombus/Schools.png'
 import print from '../assets/HeroRhombus/Printshop.png'
@@ -20,12 +20,19 @@ import arrowDown from '../assets/arrowDown.png'
 import scan from '../assets/scan.png'
 import LearnButton from '../Components/LearnButton'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 const LandingPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 })
+  }, [])
   return (
     <div>
 
-      <div className='mx-20'>
+
+      <div className='mx-20' data-aos='zoom-in'>
         <div className='w-full h-[744px]bg-cover pt-[200px] h-screen rounded-[10px]' style={{ backgroundImage: `url(${HeroBg})` }}>
 
           <h1 className='pb-10 text-[50px] text-white font-bold'>Find + connect with people and places </h1>
@@ -51,13 +58,21 @@ const LandingPage = () => {
           <CarouselSlider />
         </div>
 
-        <div className='flex mt-[140px] gap-10'>
+
+
+
+
+
+
+
+        <div className="flex mt-[140px] gap-10">
+
           <div>
             <img src={oneClick} alt="" className='rounded-[8px]' />
           </div>
           <div className='w-[50%] text-left'>
             <div className='text-[48px] border '>
-              <span className='text-[#E01A4F] font-semibold text-[53px]'>With One Click</span><br /> Buy food items quick and easy from <span className='underline decoration-[#E01A4F] underline-offset-4' >bush markets</span>  across Nigeria
+              <span className='text-[#E01A4F] font-semibold text-[53px]'>With One Click</span><br /> Buy food items quick and easy from <span className='underline decoration-[#E01A4F] underline-offset-4'>bush markets</span>  across Nigeria
             </div>
             <button className='text-[16px] w-[101px] h-[51px] rounded text-[#E01A4F] mt-10 border border-[#E01A4F]'>
               Start now
@@ -68,23 +83,27 @@ const LandingPage = () => {
         <p className='text-center text-[48px] mt-36 leading-[1.3] px-40'>We celebrate your convenience! With our assisted market solution, you can now do your market shopping with ease when you connect with our <span className='text-[#E01A4F]'> trusted and reliable </span>agents to all your vendors across various city and local markets.</p>
 
 
-        <img src={linkage} alt="" className=' my-40  rounded-[10px] ' />
+        <img src={linkage} alt="" className=' my-40  rounded-[10px] ' data-aos='fade-up' />
 
-        <h3 className='font-semibold text-[48px] my-20 ' >One-Stop-Payment for all your shopping </h3>
+        <h3 className='font-semibold text-[48px] my-20  ' data-aos='fade-left'>One-Stop-Payment for all your shopping </h3>
 
-        <div className='h-[342px] w-[960px] m-auto flex items-center gap-40' >
-          <div className='text-left'>
+        <div className='h-[342px] w-[960px] m-auto flex items-center gap-40'>
+          <div className='text-left' data-aos='fade-left'>
             <p className=' text-[32px] '>Utilize the convenience of</p>
             <h3 className='text-[#E01A4F] font-bold text-[64px]'>Point of Sales</h3>
             <p className=' text-[32px] '>for seamless transactions</p>
           </div>
-          <img src={pos} alt="" />
+          <img src={pos} alt="" data-aos='fade-right' />
 
         </div>
 
-        <div className='flex gap-5 mt-20 '>
-          <img src={marketWoman} alt="" className='rounded-lg' />
-          <div className='text-left'>
+        <div className='flex gap-5 mt-20' >
+          
+          <div>
+            <img src={marketWoman} alt="market woman" className='rounded-lg' data-aos='fade-right' />
+          </div>
+
+          <div className='text-left' data-aos='fade-left'>
             <h3 className='font-semibold text-[38px] leading-1 '>Out-smart competitors,<br />Sell more as a Vendor!</h3>
             <p className='my-4 text-xl '>
               La'ada vendors are part of a huge trader community who connect with multiple customers that are always looking forward to buying from them.
@@ -113,13 +132,12 @@ const LandingPage = () => {
           <img src={join} alt="" className='rounded-lg w-[753px] h-[538px]' />
 
         </div>
-      </div>
-      <div className='bg-[#EBEBEB] px-20'>
+      </div><div className='bg-[#EBEBEB] px-20'>
 
         <div className='mb-7 '>
           <div className='pt-20'>
-            <h3 className=' text-[52px] font-semibold text-[#E01A4F]' >Do you need a boost?</h3>
-            <h4 className='mb-10 text-[48px]' >Spotlight your business on the map</h4>
+            <h3 className=' text-[52px] font-semibold text-[#E01A4F]'>Do you need a boost?</h3>
+            <h4 className='mb-10 text-[48px]'>Spotlight your business on the map</h4>
             <div>
               <img src={map} alt="" className='rounded-[8px]' />
               <button className='flex text-[#E01A4F] items-center gap-2 border-none float-right my-2 '>Learn more
@@ -133,8 +151,8 @@ const LandingPage = () => {
 
         <div className='flex justify-between mt-[160px] border bg-[#EBEBEB] w-full p-6'>
           <div className='text-left border h-[506px] relative'>
-            <h4 className='text-[30px]' >Discover La'ada...</h4>
-            <p className='text-[18px] mt-5' >Learn more about what you can do with La'ada</p>
+            <h4 className='text-[30px]'>Discover La'ada...</h4>
+            <p className='text-[18px] mt-5'>Learn more about what you can do with La'ada</p>
             <img src={carouselRight} alt="" className='absolute bottom-10 rounded right-10' />
           </div>
           <div className='w-[779px] h-[506px]'>
@@ -145,34 +163,32 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className='my-40'>
+      </div><div className='my-40'>
         <h3 className='text-[40px] font-semibold'>Need to know more?</h3>
         <div className='flex gap-20 mt-14'>
           <div className='mx-20 '>
-            <h2 className=' text-left text-2xl mb-8' >FAQs</h2>
-            <div className='flex items-center gap-4 mb-6' >
+            <h2 className=' text-left text-2xl mb-8'>FAQs</h2>
+            <div className='flex items-center gap-4 mb-6'>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6' >
+            <div className='flex items-center gap-4 mb-6'>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6' >
+            <div className='flex items-center gap-4 mb-6'>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6' >
+            <div className='flex items-center gap-4 mb-6'>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6' >
+            <div className='flex items-center gap-4 mb-6'>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6' >
+            <div className='flex items-center gap-4 mb-6'>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
@@ -184,7 +200,7 @@ const LandingPage = () => {
             <img src={scan} alt="" className='' />
             <div className='flex mt-12 justify-between '>
               <p>Download our app to enjoy new feature</p>
-              <LearnButton/>
+              <LearnButton />
             </div>
           </div>
         </div>
