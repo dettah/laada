@@ -14,9 +14,9 @@ import { Link } from 'react-router-dom';
 
 const Community = () => {
 
-   
+
     const dataCustomer = {
-        headText: 'Who are you?',
+        headText: 'We are here for you?',
 
         paraText: 'Explore a treasure trove of goodies from nearby sellers. Find everything from handcrafted goods to tasty treats in our special customer section. Begin your adventure now to uncover the charm of local markets.',
     }
@@ -37,7 +37,7 @@ const Community = () => {
         <div>
             <div className='m-20 mt-0'>
                 <div className='w-full  bg-cover flex flex-col px-36 justify-center h-[480px] bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
-                    <h2 className='  text-[64px] font-bold '>Communities</h2>
+                    <h2 className='  text-[64px] font-bold '>The Bush Market Community</h2>
 
                     <p className='text-[20px]'>Welcome to a new way to <br /> shop, connect and <br /> experience digital age <br /> with La’ada.</p>
                 </div>
