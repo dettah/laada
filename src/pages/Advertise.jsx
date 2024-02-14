@@ -8,7 +8,7 @@ const Advertise = () => {
     <div>
       <div className=''>
         <div className='mx-20'>
-        <img src={advert} alt="" />
+          <img src={advert} alt="" />
         </div>
         <h2 className='font-semibold mt-20  text-[40px] '>Advertise with Us</h2>
 
@@ -19,22 +19,26 @@ const Advertise = () => {
         </button>
 
       </div>
-      <div className='w-[40%] m-auto'>
-          <form action="" className='flex flex-col'>
-            <label>Email Address</label>
-            <input type="email" placeholder='emmanuel@example.com' className='border border-[#6B6C6F] py-1 px-4 rounded'/>
+      <div className='w-[40%] m-auto flex justify-center '>
+        <form action="" className='flex justify-start flex-col items-start w-full '>
+          <label className='mb-2'>Email Address</label>
+          <input type="email" placeholder='emmanuel@example.com' className='border border-[#6B6C6F] mb-8 px-4 rounded w-full' />
 
-            <label>Select Product</label>
-            <input type="dropdown" className='border py-1  border-[#6B6C6F] rounded' />
+          <label className='mb-2'>Select Product</label>
+          <input type="dropdown" className='border py-1  border-[#6B6C6F] rounded w-full mb-8 ' />
 
-            <label>Message</label>
-            <input type="textfield" placeholder='Message...' className='border border-[#6B6C6F] rounded' />
+          <label className='mb-2'>Message</label>
+          {/* <textarea placeholder='Message...' className='border border-[#6B6C6F] rounded' /> */}
 
-            <button>Send</button>
-            
-          </form>
-        </div>
-      
+          <textarea
+            className=" border border-[#6B6C6F] rounded p-2 h-40 mb-4 w-full"
+            placeholder="message"></textarea>
+
+          <button className='bg-[#E01A4F] text-white rounded py-2 font-bold w-full '>Send</button>
+
+        </form>
+      </div>
+
     </div>
   )
 }

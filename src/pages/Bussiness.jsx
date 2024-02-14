@@ -39,12 +39,16 @@ const Bussiness = () => {
                 <p className='text-[20px] leading-[1.5]  '>Lorem ipsum dolor sit amet consectetur. <br /> Diam curabitur vitae tellus orci vehicula dignissim tristique. <br /> Fusce aenean leo massa tellus elit morbi suspendisse.</p>
             </div>
             <div className=' my-32 '>
-                <ProductCard
-                    heading={businessCardData.title}
-                    text={businessCardData.text}
-                    imageUrl={phone6}
-                    text2={businessCardData.text2}
-                />
+
+                <Link to={"/advert/"}>
+                    <ProductCard
+                        heading={businessCardData.title}
+                        text={businessCardData.text}
+                        imageUrl={phone6}
+                        text2={businessCardData.text2}
+                    />
+                </Link>
+
             </div>
 
             <div className='mx-20 mb-40 flex justify-between'>
@@ -57,11 +61,11 @@ const Bussiness = () => {
                     <Link to={"/network/"}>
                         <button href="" className='text-[#E01A4F]'>Learn more</button>
                     </Link>
-
                 </div>
-                <img src={group} alt="" className='rounded' />
 
+                <img src={group} alt="" className='rounded' />
             </div>
+
             <h3 className='mb-10 decoration-2 text-3xl font-semibold text-left mx-20 underline decoration-[#E01A4F] underline-offset-8'>Latest News</h3>
             <div className='flex justify-between mx-20'>
                 <LatestNewsCard
