@@ -43,7 +43,6 @@ const Statement = () => {
 
     return (
         <div>
-            <NavBar />
             <section className=''>
 
                 <h3 className=' text-3xl font-semibold my-20'>OUR MISSION</h3>
@@ -111,7 +110,6 @@ const Statement = () => {
                 />
             </div>
 
-            <Footer />
         </div>
     )
 }

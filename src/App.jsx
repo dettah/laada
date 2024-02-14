@@ -37,6 +37,7 @@ function App() {
         <Route exact path="/vendor" element={<Vendor />} />
         <Route exact path="/bushmarket" element={<Com_BushMarket />} /> 
         <Route exact path="/stores" element={<Stores />} /> 
+        <Route exact path="/partner" element={<Partner />} /> 
 
 
         {/* Add more routes as needed */}

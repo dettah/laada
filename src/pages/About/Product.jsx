@@ -12,12 +12,14 @@ const Product = () => {
 
     const prodCardData = {
         title: "Swift Customer's Interface",
-        text: 'Explore the convenient experience of connecting with vendors & stores with our friendly customer’s interface.'
+        text: 'Explore the convenient experience of connecting with vendors & stores with our friendly customer’s interface.',
+        text1: ""
     }
 
     const prodCardData1 = {
-        title: "Swift Customer's Interface",
-        text: 'Explore the convenient experience of connecting with vendors & stores with our friendly customer’s interface.'
+        title: "Market Assistant",
+        text: 'Check out our new feature! ',
+        text1: "Get market research and shopping done while you relax."
     }
 
 
@@ -28,13 +30,14 @@ const Product = () => {
                 Services that allows convenience
             </h1>
             <p className='text-[30px] mb-20'>Our platform enables you to expand your interest, connecting you <br /> with relevant people.</p>
-            <img src="" alt="" className='w-[1122px] h-[600px] m-auto' />
+            <img src="" alt="Products image" className='w-[1122px] h-[600px] m-auto' />
 
             <div className='my-40'>
                 <ProductCard
                     heading={prodCardData.title}
                     text={prodCardData.text}
                     imageUrl={phone1}
+                    text1 ={prodCardData.text1}
                 />
             </div>
             <h2 className='text-6xl my-10'>Convenience at its peak!</h2>
@@ -44,6 +47,7 @@ const Product = () => {
                     heading={prodCardData1.title}
                     text={prodCardData1.text}
                     imageUrl={phone2}
+                    text1 ={prodCardData1.text1}
                 />
             </div>
 
