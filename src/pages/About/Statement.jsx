@@ -1,6 +1,8 @@
-import React from 'react'
-import NavBar from '../../Components/shared/NavBar'
-import Footer from '../../Components/shared/Footer'
+import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import CoreValueCard from '../../Components/shared/CoreValueCard'
 import CoreValueCardOne from '../../Components/shared/CoreValueCardOne'
 import balloon from '../../assets/balloon.png'
@@ -9,12 +11,15 @@ import newsImage2 from '../../assets/new2.png'
 import newsImage3 from '../../assets/new3.png'
 import resilience from '../../assets/resilience.png'
 import consistent from '../../assets/consistent.png'
-import furniture from '../../assets/furniture.png'
 import LatestNewsCard from '../../Components/shared/LatestNewsCard'
 import LearnButton from '../../Components/LearnButton'
 import circleBox from '../../assets/circleBox.png'
 
 const Statement = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2500 })
+    }, [])
+
 
     const dataResilience = {
         headText: 'Resilience',
@@ -42,6 +47,7 @@ const Statement = () => {
     }
 
     return (
+
         <div>
             <section className=''>
 
@@ -81,7 +87,7 @@ const Statement = () => {
             <div>
                 <img src={circleBox} alt="" />
             </div>
-            <section className='m-20 flex'>
+            <section className='m-20 flex' data-aos='fade-up'>
                 <div className=' h-[300px] w-[600px] bg-[#FCE8ED] py-7 px-14 text-left '>
                     <h3 className=' font-semibold text-2xl'>Privacy and Security</h3>
                     <p className='my-5 '>We feature experience that gives you the choice to choose how your data is used.</p>
@@ -91,6 +97,7 @@ const Statement = () => {
 
                 </div>
             </section>
+            
             <h3 className='mb-10 decoration-2 text-3xl font-semibold text-left mx-20 underline decoration-[#E01A4F] underline-offset-8'>Latest News</h3>
             <div className='flex justify-between mx-20'>
                 <LatestNewsCard

@@ -26,15 +26,17 @@ import 'aos/dist/aos.css'
 
 
 const LandingPage = () => {
+
   useEffect(() => {
     AOS.init({ duration: 2500 })
   }, [])
+
   return (
     <div>
 
 
       <div className='mx-20' >
-        <div className='w-full bg-cover pt-[200px] h-screen rounded-[10px]' style={{ backgroundImage: `url(${HeroBg})` }}>
+        <div className='w-full bg-cover pt-[160px] pb-40 rounded-[10px]' style={{ backgroundImage: `url(${HeroBg})` }}>
 
           <h1 className='pb-10 text-[50px] text-white font-bold' data-aos='zoom-in'>Find + connect with people and places </h1>
           <input type="search" name="search" placeholder='Type to find' className='px-6 rounded mb-20 w-[630px] h-[56px]' id="" />
@@ -47,24 +49,17 @@ const LandingPage = () => {
             <img src={taxi} alt="Taxi" />
             <img src={seeAll} alt="see all" />
           </div>
-
-
-
-
         </div>
 
+
         <h2 className='text-[48px] font-semibold mt-28 mb-6 ' data-aos='fade-up'>Top Bush Markets People Visit</h2>
+
+
+
         {/* 
         <div>
           <CarouselSlider />
         </div> */}
-
-
-
-
-
-
-
 
         <div className="flex mt-[140px] gap-10">
 
