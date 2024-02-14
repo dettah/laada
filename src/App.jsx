@@ -18,6 +18,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Com_BushMarket from "./pages/Com_BushMarket";
 import Stores from "./pages/Stores";
 import MA from "./pages/MA";
+import RegForm from "./pages/RegForm";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route exact path="/stores" element={<Stores />} /> 
         <Route exact path="/partner" element={<Partner />} /> 
         <Route exact path="/ma" element={<MA />} /> 
+        <Route exact path="/reg-form" element={<RegForm />} /> 
 
 
         {/* Add more routes as needed */}
