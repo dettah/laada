@@ -32,9 +32,9 @@ const Vendor = () => {
 
     return (
         <div>
-            <h2 className='text-6xl mt-20 mb-10'>Want to become a global <span className='text-[#E01A4F]'>
-                    vendor?
-                </span>
+            <h2 className=' leading-[1.5] text-6xl mt-20 mb-10'>Want to become a <br /> global <span className='text-[#E01A4F]'>
+                vendor?
+            </span>
             </h2>
             <CustomerSubHero
                 text={heroData.text}

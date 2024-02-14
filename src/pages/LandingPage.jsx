@@ -158,9 +158,13 @@ const LandingPage = () => {
             <h4 className='mb-10 text-[48px]' data-aos='fade-up'>Spotlight your business on the map</h4>
             <div>
               <img src={map} alt="" className='rounded-[8px]' />
-              <button className='flex text-[#E01A4F] items-center gap-2 border-none float-right my-2 '>Learn more
-                <img src={arrow} alt="" />
-              </button>
+              <Link to={"/vendor/"}>
+
+                <button className='flex text-[#E01A4F] items-center gap-2 border-none float-right my-2 '>Learn more
+                  <img src={arrow} alt="" />
+                </button>
+              </Link>
+
             </div>
 
           </div>
@@ -172,7 +176,7 @@ const LandingPage = () => {
             <h4 className='text-[30px] ' >Discover La'ada...</h4>
             <p className='text-[18px] mt-5'>Learn more about what you can do with La'ada</p>
 
-            <Link to={"/stores/"}>
+            <Link to={"/bushmarket/"}>
               <button>
                 <img src={carouselRight} alt="" className='absolute bottom-10 rounded right-10 transition-transform duration-300 transform-gpu hover:scale-110' />
               </button>
