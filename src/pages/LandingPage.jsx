@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import HeroBg from '../assets/heroBg.png'
-import school from '../assets/HeroRhombus/Schools.png'
+import market from '../assets/HeroRhombus/Marketplaces.png'
 import print from '../assets/HeroRhombus/Printshop.png'
 import store from '../assets/HeroRhombus/Stores.png'
 import taxi from '../assets/HeroRhombus/LocalTaxi.png'
@@ -43,11 +43,11 @@ const LandingPage = () => {
 
 
           <div className=' flex justify-center ' data-aos='fade-up'>
-            <img src={school} alt="school" />
-            <img src={print} alt="print" />
-            <img src={store} alt="stores" />
-            <img src={taxi} alt="Taxi" />
-            <img src={seeAll} alt="see all" />
+            <img src={market} alt="school" />
+            <img src={market} alt="print" />
+            <img src={market} alt="stores" />
+            <img src={market} alt="Taxi" />
+            <img src={market} alt="see all" />
           </div>
         </div>
 
