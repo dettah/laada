@@ -15,7 +15,7 @@ import pos from '../assets/pos.png'
 import marketWoman from '../assets/marketWoman.png'
 import join from '../assets/join.png'
 import map from '../assets/map.png'
-import mall from '../assets/mall.png'
+import landing12 from '../assets/landing12.png'
 import carouselRight from '../assets/carouselRight.png'
 import arrowDown from '../assets/arrowDown.png'
 import scan from '../assets/scan.png'
@@ -38,7 +38,7 @@ const LandingPage = () => {
       <div className='mx-20' >
         <div className='w-full bg-cover pt-[160px] pb-40 rounded-[10px]' style={{ backgroundImage: `url(${HeroBg})` }}>
 
-          <h1 className='pb-10 text-[50px] text-white font-bold' data-aos='zoom-in'>Find + connect with people and places </h1>
+          <h1 className='pb-10 text-[50px] text-white font-bold' data-aos='zoom-in'>Find + connect with people and bush markets </h1>
           <input type="search" name="search" placeholder='Type to find' className='px-6 rounded mb-20 w-[630px] h-[56px]' id="" />
 
 
@@ -199,7 +199,7 @@ const LandingPage = () => {
 
           </div>
           <div className='w-[779px] h-[506px]' data-aos='fade-left'>
-            <img src={mall} alt="" className=' rounded-[8px]' />
+            <img src={landing12} alt="" className=' rounded-[8px]' />
             <div className='text-left'>
               <h4 className='mt-5 text-xl'>List of Market with the best Discounts</h4>
               <p>Alaba Int'l market</p>
@@ -212,27 +212,27 @@ const LandingPage = () => {
         <div className='flex gap-20 mt-14' data-aos='fade-right'>
           <div className='mx-20 '>
             <h2 className=' text-left text-2xl mb-8'>FAQs</h2>
-            <div className='flex items-center gap-4 mb-6'>
+            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
+              <p>What is Market Assistant?</p> <img src={arrowDown} alt="" className='w-4' />
+
+            </div>
+            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
+              <p>How can I buy from La'ada?</p> <img src={arrowDown} alt="" className='w-4' />
+
+            </div>
+            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6'>
+            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6'>
+            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
-            <div className='flex items-center gap-4 mb-6'>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
-
-            </div>
-            <div className='flex items-center gap-4 mb-6'>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
-
-            </div>
-            <div className='flex items-center gap-4 mb-6'>
+            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>

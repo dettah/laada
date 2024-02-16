@@ -40,7 +40,12 @@ const NavBar = () => {
 
         </nav>
         <div className='flex gap-6'>
+
+
+        <Link to={"/reg-form/"}>
+
           <button className='border border-[#E01A4F] rounded-[06px] px-6 py-1'>Join NOW</button>
+        </Link>
           <button className='bg-[#E01A4F] rounded-[6px] px-6 '>Download</button>
         </div>
       </div>
