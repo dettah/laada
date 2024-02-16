@@ -60,7 +60,7 @@ const LandingPage = () => {
           <Link to={"/bushmarket/"}>
           <img src={seeAll} alt="see all" />
           </Link>
-           >
+           
            
 
           </div>
