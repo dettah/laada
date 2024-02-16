@@ -12,7 +12,7 @@ const BushMarket = () => {
                 <h2 className='text-5xl leading-[1.5]'>Your community hub for local insights and market <br /> trends</h2>
 
                 <Link to={"/bushmarket/"}>
-                    <button className='text-[#e01a4f] rounded-[6px] px-6 py-[8px] font-bold text-xl my-9'>Enter market</button>
+                    <button className='text-[#e01a4f] rounded-[6px] px-6 py-[8px] font-bold text-xl my-9 hover:scale-110 '>Enter market</button>
 
                     <img src={bushMarket} alt="" className=' w-[1122px] rounded m-auto' />
                 </Link>

@@ -23,6 +23,7 @@ import LearnButton from '../Components/LearnButton'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import FAQ from '../Components/FAQ';
 
 
 const LandingPage = () => {
@@ -207,16 +208,15 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className='my-40'>
+      <div className='my-40 mx-40'>
         <h3 className='text-[40px] font-semibold' data-aos='fade-up'>Need to know more?</h3>
-        <div className='flex gap-20 mt-14' data-aos='fade-right'>
-          <div className='mx-20 '>
-            <h2 className=' text-left text-2xl mb-8'>FAQs</h2>
-            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
-              <p>What is Market Assistant?</p> <img src={arrowDown} alt="" className='w-4' />
+        <div className='flex gap-20 justify-between mt-14' data-aos='fade-right'>
+          <div className=' '>
+           
+            
+            
 
-            </div>
-            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
+            {/* <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
               <p>How can I buy from La'ada?</p> <img src={arrowDown} alt="" className='w-4' />
 
             </div>
@@ -235,7 +235,9 @@ const LandingPage = () => {
             <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
 
-            </div>
+            </div> */}
+
+            <FAQ/>
 
           </div>
 
