@@ -2,7 +2,7 @@ import React from 'react'
 import LearnButton from '../LearnButton'
 const ReuseableCard = ({heading, paragraph, imageUrl}) => {
   return (
-    <div className='flex w-[1169px] h-[546px] gap-11 items-center px-[171px] m-auto shadow-md z-10'>
+    <div className='flex w-[1169px] h-[546px] gap-11 items-center px-[171px] m-auto shadow-md z-10 hover:scale-110 transition-all duration-300'>
       <div className='flex items-center h-auto'>
         <img src={`${imageUrl}` }alt="" className='w-[664px] rounded-[8px]' />
       </div>

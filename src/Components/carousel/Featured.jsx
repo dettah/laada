@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const images = [market1, market2, market1, market2];
 const titles = ['Abuja village market', 'Farm market', 'Orange market', 'Groceries 4'];
 
-const Carousel = () => {
+const Featured = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const prevSlide = () => {
@@ -32,8 +32,12 @@ const Carousel = () => {
         >
         {images.map((image, index) => (
           <div className="shadow-md ring-1 ring-gray-200 px-3 pb-3 hover:bg-gray-100 hover:scale-105" key={index}>
-            <h2 className="text-3xl font-semibold text-left py-2">{titles[index]}</h2>
             <img src={image} alt={`Slide ${index + 1}`} className="max-w-[370px]" />
+            <div className='flex justify-between items-center'>
+                
+            <h2 className="text-2xl font-md text-left py-2">{titles[index]}</h2>
+            <button className='bg-[#E01A4F] rounded-[6px] text-white px-6 py-[8px]'>Contact us</button>
+            </div>
           </div>
         ))}
       </div>
@@ -49,4 +53,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Featured;

@@ -1,7 +1,8 @@
 import React from 'react'
-import bushMarket from '../../assets/bushMarket.png'
+import bushMarket from '../../assets/explore.png'
 import CommunityCarousel from '../carousel/CommunityCarousel'
 import { Link } from 'react-router-dom';
+import Featured from '../carousel/Featured';
 
 const BushMarket = () => {
     return (
@@ -13,10 +14,12 @@ const BushMarket = () => {
                 <Link to={"/bushmarket/"}>
                     <button className='text-[#e01a4f] rounded-[6px] px-6 py-[8px] font-bold text-xl my-9'>Enter market</button>
 
-                <img src={bushMarket} alt="" className=' w-[1122px] rounded m-auto' />
-                </Link> 
+                    <img src={bushMarket} alt="" className=' w-[1122px] rounded m-auto' />
+                </Link>
             </section>
             <CommunityCarousel />
+            <h2 className='text-left px-10 mt-36 font-semibold text-3xl'>Featured Vendors</h2>
+            <Featured />
         </div>
     )
 }

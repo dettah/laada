@@ -2,9 +2,9 @@ import React from 'react'
 import community from '../assets/community.png'
 import ReuseableCard from '../Components/shared/ReuseableCard'
 import ReuseableCardOne from '../Components/shared/ReuseableCardOne'
-import customerPic from '../assets/customer.png'
-import vendorImage from '../assets/VendorImage.png'
-import partnerImage from '../assets/partnerImage.png'
+import customerPic from '../assets/customer1.png'
+import vendorImage from '../assets/Venimage.png'
+import partnerImage from '../assets/partner12.png'
 import BushMarket from '../Components/shared/BushMarket'
 import CommunityBottomStrip from '../Components/CommunityBottomStrip'
 import { Link } from 'react-router-dom';
@@ -23,7 +23,7 @@ const Community = () => {
     const dataVendor = {
         headText: 'Vendor',
 
-        paraText: "Sell your stuff and meet lots of buyers on La'ada's . Use simple tools to grow your business and share what you love. Join us now and be part of our big seller group.",
+        paraText: "Sell your food stuff and meet lots of buyers on La'ada's . Use simple tools to grow your business and share what you love. Join us now and be part of our large trader community.",
     }
 
     const dataPartner = {
@@ -37,7 +37,7 @@ const Community = () => {
         <div>
             <div className='m-20 mt-0'>
                 <div className='w-full  bg-cover flex flex-col px-36 justify-center h-[480px] bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
-                    <h2 className='  text-[64px] font-bold '>The Bush Market Community</h2>
+                    <h2 className='  text-[64px] font-bold drop-shadow-lg '>The Bush Market Community</h2>
 
                     <p className='text-[20px]'>Welcome to a new way to <br /> shop, connect and <br /> experience digital age <br /> with La’ada.</p>
                 </div>
@@ -45,10 +45,15 @@ const Community = () => {
             <div>
                 <h3 className='text-4xl font-bold mb-7 leading-[1.5] '>Stay connected to people & places who share similar <br /> interest as you, enjoy unlimited real-time market <br /> information </h3>
                 <div>
-                    <button className='text-[#e01a4f] rounded-[6px] px-6 py-[8px] font-bold'>
+                    <button className='text-[#e01a4f] rounded-[6px] px-6 py-[8px] font-bold hover:scale-110 transition-transform duration-300 ease-in-out'>
                         Explore</button>
-                    <button className='bg-[#E01A4F] rounded-[6px] px-6 py-[8px] font-bold text-white'>
-                        Join now</button>
+
+                    <Link to={"/reg-form/"}>
+                        <button className='bg-[#E01A4F] rounded-[6px] px-6 py-[8px] font-bold text-white hover:scale-110 transition-transform duration-300 ease-in-out'>
+                            Join now
+                        </button>
+                    </Link>
+
                 </div>
             </div>
 
@@ -67,6 +72,7 @@ const Community = () => {
                     paragraph={dataVendor.paraText}
                 />
             </Link>
+            
             <Link to={"/partner/"}>
 
                 <ReuseableCard
