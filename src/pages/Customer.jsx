@@ -40,12 +40,14 @@ const Customer = () => {
         heading={RCData.title}
         paragraph={RCData.text}
         imageUrl={VendorImage}
-      />
+        backgroundImg="white"
+              />
 
       <ReuseableCard
         heading={RCOData.title}
         paragraph={RCOData.text}
         imageUrl={partnerImage}
+        backgroundImg="white"
       />
       <BushMarket/>
       <CommunityBottomStrip/>

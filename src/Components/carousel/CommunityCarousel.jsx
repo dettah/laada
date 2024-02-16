@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const images = [market1, market2, market1, market2];
 const titles = ['Abuja village market', 'Farm market', 'Orange market', 'Groceries 4'];
 
-const Carousel = () => {
+const CommunityCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const prevSlide = () => {
@@ -49,4 +49,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CommunityCarousel;

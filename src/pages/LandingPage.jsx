@@ -46,23 +46,23 @@ const LandingPage = () => {
           <div className=' flex justify-center ' data-aos='fade-up'>
 
 
-          <Link to={"/bushmarket/"}>
-            <img src={market} alt="school" />
-          </Link>
-          <Link to={"/bushmarket/"}>
-            <img src={market} alt="school" />
-          </Link>
-          <Link to={"/bushmarket/"}>
-            <img src={market} alt="school" />
-          </Link>
-          <Link to={"/bushmarket/"}>
-            <img src={market} alt="school" />
-          </Link>
-          <Link to={"/bushmarket/"}>
-          <img src={seeAll} alt="see all" />
-          </Link>
-           
-           
+            <Link to={"/bushmarket/"}>
+              <img src={market} alt="school" />
+            </Link>
+            <Link to={"/bushmarket/"}>
+              <img src={market} alt="school" />
+            </Link>
+            <Link to={"/bushmarket/"}>
+              <img src={market} alt="school" />
+            </Link>
+            <Link to={"/bushmarket/"}>
+              <img src={market} alt="school" />
+            </Link>
+            <Link to={"/bushmarket/"}>
+              <img src={seeAll} alt="see all" />
+            </Link>
+
+
 
           </div>
         </div>
@@ -208,36 +208,13 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      
       <div className='my-40 mx-40'>
         <h3 className='text-[40px] font-semibold' data-aos='fade-up'>Need to know more?</h3>
         <div className='flex gap-20 justify-between mt-14' data-aos='fade-right'>
           <div className=' '>
-           
-            
-            
 
-            {/* <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
-              <p>How can I buy from La'ada?</p> <img src={arrowDown} alt="" className='w-4' />
-
-            </div>
-            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
-
-            </div>
-            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
-
-            </div>
-            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
-
-            </div>
-            <div className='flex items-center gap-4 bg-[#F5F5F5] p-3 rounded-[10px] mb-6 '>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <img src={arrowDown} alt="" className='w-4' />
-
-            </div> */}
-
-            <FAQ/>
+            <FAQ />
 
           </div>
 

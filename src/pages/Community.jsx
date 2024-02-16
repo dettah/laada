@@ -72,7 +72,7 @@ const Community = () => {
                     paragraph={dataVendor.paraText}
                 />
             </Link>
-            
+
             <Link to={"/partner/"}>
 
                 <ReuseableCard
