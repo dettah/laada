@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react'
-import NewsCard from '../Components/NewsCard'
+import {NewsCard,NewsCard1, NewsCard2,NewsCard3, NewsCard4, NewsCard5} from '../Components/NewsCard'
 import VendorImage from '../assets/VendorImage.png'
 import dropdown from '../assets/dropdown.png'
 
@@ -14,26 +14,26 @@ const News = () => {
           <NewsCard />
         </Link>
         <Link to={"/news-content/"}>
-          <NewsCard />
+          <NewsCard1 />
         </Link>
         <Link to={"/news-content/"}>
-          <NewsCard />
+          <NewsCard2 />
         </Link>
         <Link to={"/news-content/"}>
-          <NewsCard />
+          <NewsCard3 />
         </Link>
         <Link to={"/news-content/"}>
-          <NewsCard />
+          <NewsCard4 />
         </Link>
         <Link to={"/news-content/"}>
-          <NewsCard />
+          <NewsCard5 />
         </Link>
       </div>
       <div className='flex justify-between px-40 py-20 bg-[#FEEEED] my-52 '>
 
         <div className='w-[50%] text-left px-20'>
-          <h2 className='font-bold text-5xl mb-10'>Lorem</h2>
-          <p className='text-xl leading-[2]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit molestias deleniti quos optio! Maxime, quod quia! Nostrum, quia tempora?</p>
+          <h2 className='font-bold text-5xl mb-10'>Tech Sector Thrives in Nigeria</h2>
+          <p className='text-xl leading-[2]'>Nigeria's tech sector is witnessing a surge in growth, defying economic challenges in the country. Startups in the tech space are raising significant funding from venture capitalists..</p>
         </div>
         <div>
 
@@ -43,7 +43,7 @@ const News = () => {
       <div className='text-left px-28'>
         <button className='flex gap-2 items-center'>
           <img src={dropdown} alt="" />
-          <span>More news</span>
+          <span>More news</span>s
         </button>
       </div>
 

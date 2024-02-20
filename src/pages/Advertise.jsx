@@ -12,7 +12,7 @@ const Advertise = () => {
         </div>
         <h2 className='font-semibold mt-20  text-[40px] '>Advertise with Us</h2>
 
-        <p className='text-[30px] mx-60 my-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, voluptatem, nam, exercitationem delectus architecto voluptatum lit sit fugiat perferendis neque, officia asperiores illum odit voluptatum nostrum tenetur nihil.</p>
+        <p className='text-[30px] mx-60 my-5'>  We support your growth. lean our back. Let us show you to the world. Drive your business revenue through our community today.</p>
 
         <button className='flex text-[#E01A4F] items-center gap-2 border-none m-auto mb-40'>Contact Us
           <img src={arrow} alt="" className='' />

@@ -19,6 +19,7 @@ import landing12 from '../assets/landing12.png'
 import carouselRight from '../assets/carouselRight.png'
 import arrowDown from '../assets/arrowDown.png'
 import scan from '../assets/scan.png'
+import laada_farm from '../assets/laada_farm.jpg'
 import LearnButton from '../Components/LearnButton'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Carousel from "react-multi-carousel";
