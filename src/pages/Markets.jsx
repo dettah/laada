@@ -32,8 +32,6 @@ const Markets = () => {
                             onChange={handleChange} placeholder='Search market' className='rounded py-1 px-4 w-96 outline-none ' />
                     </div>
                 </div>
-
-
                 <div className='flex flex-wrap gap-2 md:gap-x-6 lg:gap-x-8 items-center px-20 md:py-6'>
                     {marketCategories.map(item => (
                         <Link>
@@ -45,7 +43,6 @@ const Markets = () => {
             <div className='grid gap-y-6 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-6 w-full px-20 mt-6'>
                 {results.map(item => (
                     <div key={item.id}>
-                        
                         <MarketCard title={item.storeName} image={item.marketImage} text={item.marketName} showTitle = {false} showButton={true}/>
                     </div>
                 ))}
