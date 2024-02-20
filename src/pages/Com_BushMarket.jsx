@@ -4,6 +4,9 @@ import searchIcon from '../assets/searchIcon.png'
 import sortIcon from '../assets/sortIcon.png'
 import MarketCard from '../Components/MarketCard'
 import marketItem from "../assets/marketItems.png"
+import LearnButton from '../Components/LearnButton'
+import { data, marketsPreview } from '../../data'
+import { Link } from 'react-router-dom'
 
 const Com_BushMarket = () => {
     const MKCard = {
@@ -39,38 +42,20 @@ const Com_BushMarket = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-wrap gap-16 justify-between  w-full px-20 mt-10'>
-                    <MarketCard
-                        title={MKCard.mkt_nm}
-                        text={MKCard.shp_nm}
-                        image={marketItem}
-                    />
-                    <MarketCard
-                        title={MKCard.mkt_nm}
-                        text={MKCard.shp_nm}
-                        image={marketItem}
-                    />
-                    <MarketCard
-                        title={MKCard.mkt_nm}
-                        text={MKCard.shp_nm}
-                        image={marketItem}
-                    />
-                    <MarketCard
-                        title={MKCard.mkt_nm}
-                        text={MKCard.shp_nm}
-                        image={marketItem}
-                    />
-                    <MarketCard
-                        title={MKCard.mkt_nm}
-                        text={MKCard.shp_nm}
-                        image={marketItem}
-                    />
-                    <MarketCard
-                        title={MKCard.mkt_nm}
-                        text={MKCard.shp_nm}
-                        image={marketItem}
-                    />
+                
+                <div className='grid gap-y-6 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-6 w-full px-20 mt-6'>
+                    {marketsPreview.map(item => (
+                        <div key={item.id}>
+
+                            <MarketCard title={item.storeName} image={item.marketImage} text={item.marketName} showTitle={false} />
+                        </div>
+                    ))}
                 </div>
+                <Link to={'/markets'}>
+                    <div className='flex justify-end w-full px-20 mt-6'>
+                        <LearnButton />
+                    </div>
+                </Link>
             </section>
 
         </div>

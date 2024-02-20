@@ -51,7 +51,7 @@ const FAQ = () => {
                 <div key={index} className="mb-4">
 
                     <button
-                        className="  flex flex-col bg-gray-200 hover:bg-gray-300 text-left py-1 px-4 rounded-lg focus:outline-none focus:bg-gray-300 mt-8"
+                        className=" flex flex-col bg-gray-200 hover:bg-gray-300 text-left py-1 px-4 rounded-lg focus:outline-none focus:bg-gray-300 mt-8"
                         onClick={() => toggleFAQ(index)}
                     >
 

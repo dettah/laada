@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import HeroBg from '../assets/heroBg.png'
 import market from '../assets/HeroRhombus/Marketplaces.png'
@@ -20,30 +20,97 @@ import carouselRight from '../assets/carouselRight.png'
 import arrowDown from '../assets/arrowDown.png'
 import scan from '../assets/scan.png'
 import LearnButton from '../Components/LearnButton'
+import { FaArrowRightLong } from "react-icons/fa6";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import FAQ from '../Components/FAQ';
+import { topMarkets } from '../../data';
+
+
+const CarouselComp = ({name, image, address}) => {
+  return (
+    <div className='flex justify- items-center bg-[#feeeed] border py-2 px-2 w-full '>
+      <div>
+        <img
+          // src="https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          className="w-24 h-[80px] object-cover object-center"
+          src={image}
+        />
+      </div>
+      <div className='pl-4'>
+        <p className='font-bold'>{name}</p>
+        <p className='text-[.9rem] pb-2'>{address}</p>
+
+        <Link to = {"/markets"}>
+          <div className='cursor-pointer flex gap-x-2 items-center border rounded-lg text-red-500 border-red-500 py-1 px-'>
+            <p>Visit  Now</p>
+            <FaArrowRightLong className='text-xl' />
+
+          </div>
+        </Link>
+      </div>
+    </div>
+
+
+  )
+}
 
 
 const LandingPage = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1124 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1124, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   useEffect(() => {
-    AOS.init({ duration: 2500 })
+    AOS.init({ duration: 600 })
   }, [])
+
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div>
 
 
-      <div className='mx-20' >
-        <div className='w-full bg-cover pt-[160px] pb-40 rounded-[10px]' style={{ backgroundImage: `url(${HeroBg})` }}>
+      <div className='px-4 lg:mx-20' >
+        <div className='w-full px-4 lg:px-0 bg-cover pt-[160px] pb-40 rounded-[10px]' style={{ backgroundImage: `url(${HeroBg})` }}>
 
-          <h1 className='pb-10 text-[50px] text-white font-bold' data-aos='zoom-in'>Find + connect with people and bush markets </h1>
-          <input type="search" name="search" placeholder='Type to find' className='px-6 rounded mb-20 w-[630px] h-[56px]' id="" />
+          <h1 className='pb-10 text-[24px] lg:text-[50px] text-white font-bold'>Find + connect with people and bush markets </h1>
+          {/* <input type="search" name="search" placeholder='Type to find' className='px-6 rounded mb-20 w-[630px] h-[56px]' id="" /> */}
 
 
-          <div className=' flex justify-center ' data-aos='fade-up'>
+          <div className='flex justify-center'>
 
 
             <Link to={"/bushmarket/"}>
@@ -68,8 +135,44 @@ const LandingPage = () => {
         </div>
 
 
-        <h2 className='text-[48px] font-semibold mt-28 mb-6 ' data-aos='fade-up'>Top Bush Markets People Visit</h2>
+        <h2 className='text-[28px] lg:text-[42px] font-semibold mt-4 mb-6'>Top Bush Markets People Visit</h2>
 
+        {/* CAROUSEL */}
+        
+          <Carousel
+            // responsive={responsive}
+            swipeable={true}
+            draggable={true}
+            // showDots={true}
+            responsive={responsive}
+            // ssr={true} // means to render carousel on server-side.
+            // infinite={true}
+            // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+            autoPlay={true}
+            // autoPlaySpeed={1000}
+            // keyBoardControl={true}
+            // customTransition="all .5"
+            // transitionDuration={500}
+            // containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            arrows={true}
+            // deviceType={this.props.deviceType}
+            // dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-0-px"
+          >
+
+          {topMarkets.map(market => (
+              <div key = {market.id}>
+                  <CarouselComp name={market.name} address={market.address} image={market.marketImage} />
+              </div>
+            ))}
+
+          </Carousel>
+        
+        {/* CAROUSEL */}
+
+
+      
 
 
         {/* 
@@ -77,13 +180,13 @@ const LandingPage = () => {
           <CarouselSlider />
         </div> */}
 
-        <div className="flex mt-[140px] gap-10">
+        <div className="lg:flex mt-[140px] gap-10">
 
           <div data-aos='fade-right'>
-            <img src={oneClick} alt="" className='rounded-[8px]' />
+            <img src={oneClick} alt="" className='rounded-[8px] w-full' />
           </div>
-          <div className='w-[50%] text-left'>
-            <div className='text-[48px] border '>
+          <div className='w-full lg:w-[50%] text-left'>
+            <div className='text-[38px] md:text-[48px] border '>
               <span className='text-[#E01A4F] font-semibold text-[53px]'>With One Click</span><br /> Buy food items quick and easy from <span className='underline decoration-[#E01A4F] underline-offset-4'>bush markets</span>  across Nigeria
             </div>
 
@@ -98,10 +201,10 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <p className='text-center text-[48px] mt-36 leading-[1.3] px-40' data-aos='fade-up'>We celebrate your convenience! With our assisted market solution, you can now do your market shopping with ease when you connect with our <span className='text-[#E01A4F]'> trusted and reliable </span>agents to all your vendors across various city and local markets.</p>
+        <p className='text-left md:text-center text-[38px] lg:text-[48px] mt-12 lg:mt-36 leading-[1.3] lg:px-40' data-aos='fade-up'>We celebrate your convenience! With our assisted market solution, you can now do your market shopping with ease when you connect with our <span className='text-[#E01A4F]'> trusted and reliable </span>agents to all your vendors across various city and local markets.</p>
 
 
-        <img src={linkage} alt="" className=' mt-40 mb-5  rounded-[10px] ' data-aos='fade-up' />
+        <img src={linkage} alt="" className='mt-8 md:mt-40 mb-5  rounded-[10px] ' data-aos='fade-up' />
 
         <Link to={"/ma/"}>
 
@@ -110,19 +213,19 @@ const LandingPage = () => {
           </button>
         </Link>
 
-        <h3 className='font-semibold text-[48px] my-20  ' data-aos='fade-up'>One-Stop-Payment for all your shopping </h3>
+        <h3 className='font-semibold md:text-[48px] mt-20 mb-12 md:my-20  text-[38px]' data-aos='fade-up'>One-Stop-Payment for all your shopping </h3>
 
-        <div className='h-[342px] w-[960px] m-auto flex items-center gap-40'>
+        <div className=' w-full lg:h-[342px] lg:w-[960px] mb-8 md:m-auto md:flex items-center gap-40'>
           <div className='text-left' data-aos='fade-left'>
             <p className=' text-[32px] '>Utilize the convenience of</p>
-            <h3 className='text-[#E01A4F] font-bold text-[64px]'>Point of Sales</h3>
+            <h3 className='text-[#E01A4F] font-bold text-[38px] md:text-[64px]'>Point of Sales</h3>
             <p className=' text-[32px] '>for seamless transactions</p>
           </div>
           <img src={pos} alt="" data-aos='fade-right' />
 
         </div>
 
-        <div className='flex gap-5 mt-20' >
+        <div className='lg:flex gap-5 mt-20' >
 
 
           <img src={marketWoman} alt="market woman" className='rounded-lg' />
@@ -139,13 +242,13 @@ const LandingPage = () => {
             <Link to={"/vendor/"}>
 
               <button className='flex text-[#E01A4F] items-center gap-2 border-none'>Learn more
-                <img src={arrow} alt="" />
+                <img src={arrow} className='object-cover object-top' alt="" />
               </button>
             </Link>
           </div>
         </div>
 
-        <div className='flex my-36 gap-5'>
+        <div className='lg:flex my-36 gap-5'>
           <div className='text-left py-20' data-aos='fade-right'>
             <h3 className='font-semibold text-[45px] mb-6'>Join our community</h3>
             <p className='my-4 text-xl'>
@@ -157,20 +260,20 @@ const LandingPage = () => {
             <Link to={"/community/"}>
 
               <button className='flex text-[#E01A4F] items-center gap-2 border-none'>Learn more
-                <img src={arrow} alt="" />
+                <img src={arrow}  alt="" />
               </button>
             </Link>
           </div>
 
-          <img src={join} alt="" className='rounded-lg w-[753px] h-[538px]' />
+          <img src={join} alt="" className='rounded-lg lg:w-[753px] lg:h-[538px]' />
 
         </div>
       </div>
-      <div className='bg-[#EBEBEB] px-20'>
+      <div className='bg-[#EBEBEB] lg:px-20'>
 
         <div className='mb-7 '>
           <div className='pt-20'>
-            <h3 className=' text-[52px] font-semibold text-[#E01A4F]' data-aos='fade-up'>Do you need a boost?</h3>
+            <h3 className='text-[38px] md:text-[52px] font-semibold text-[#E01A4F]' data-aos='fade-up'>Do you need a boost?</h3>
             <h4 className='mb-10 text-[48px]' data-aos='fade-up'>Spotlight your business on the map</h4>
             <div>
               <img src={map} alt="" className='rounded-[8px]' />
@@ -208,19 +311,19 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      
-      <div className='my-40 mx-40'>
+
+      <div className='my-40 md:mx-20 lg:mx-40'>
         <h3 className='text-[40px] font-semibold' data-aos='fade-up'>Need to know more?</h3>
-        <div className='flex gap-20 justify-between mt-14' data-aos='fade-right'>
+        <div className='md:flex gap-20 justify-between mt-14' data-aos='fade-right'>
           <div className=' '>
 
             <FAQ />
 
           </div>
 
-          <div className='bg-[#fde6a9] p-8 w-[520px] h-[545px]' data-aos='fade-left'>
+          <div className='bg-[#fde6a9] p-8 w-full lg:w-[520px] h-[545px]' data-aos='fade-left'>
             <h3 className='text-left text-4xl mb-10 '>Scan-to-pay</h3>
-            <img src={scan} alt="" className='' />
+            <img src={scan} alt="" className='w-full' />
             <div className='flex mt-12 justify-between '>
               <p>Download our app to enjoy new feature</p>
               <LearnButton />
