@@ -32,7 +32,7 @@ const MA = () => {
 
     return (
         <div>
-
+            
             <section className='bg-[#FCE8ED] mx-40 flex flex-col items-center mt-32 mb-0 p-5'>
                 <h2 className='text-4xl my-10' data-aos='zoom-in'>
                     Your Market Assistant on the go

@@ -6,7 +6,7 @@ const MaCarousel = ({ slides }) => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
     useEffect(() => {
-        const interval = setInterval(goToNextSlide, 2000); // Auto scroll every two seconds
+        const interval = setInterval(goToNextSlide, 5000); // Auto scroll every two seconds
         return () => clearInterval(interval); // Clean up the interval on unmount
     }, [currentSlideIndex]); // Run effect whenever currentSlideIndex changes
 
