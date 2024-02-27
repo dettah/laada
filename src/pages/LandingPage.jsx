@@ -281,7 +281,7 @@ const LandingPage = () => {
       </div>
       <div className='bg-[#EBEBEB] lg:px-20'>
 
-        <div className='mb-7 '>
+        <div className='mb-7 sm:px-0 px-2 '>
           <div className='pt-20'>
             <h3 className='text-[38px] md:text-[52px] font-semibold text-[#E01A4F]' data-aos='fade-up'>Do you need a boost?</h3>
             <h4 className='mb-10 text-[48px]' data-aos='fade-up'>Spotlight your business on the map</h4>
