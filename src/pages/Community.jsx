@@ -36,8 +36,8 @@ const Community = () => {
     return (
         <div>
             <div className='md:m-20 mx-5 mt-0'>
-                <div className='w-full  bg-cover flex flex-col px-36 justify-center h-[480px] bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
-                    <h2 className='  text-[64px] font-bold drop-shadow-lg '>The Bush Market Community</h2>
+                <div className='w-full  bg-cover flex flex-col md:px-36 px-5 justify-center md:h-[480px] py-2 h-fit bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
+                    <h2 className=' text-left md:text-[4.3rem] font-bold text-[40px] drop-shadow-lg '>The Bush Market Community</h2>
 
                     <p className='text-[20px]'>Welcome to a new way to <br /> shop, connect and <br /> experience digital age <br /> with La’ada.</p>
                 </div>
