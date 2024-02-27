@@ -279,9 +279,9 @@ const LandingPage = () => {
 
         </div>
       </div>
-      <div className='bg-[#EBEBEB] lg:px-20'>
+      <div className='bg-[#EBEBEB] lg:px-20 px-4'>
 
-        <div className='mb-7 sm:px-0 px-2 '>
+        <div className='mb-7  '>
           <div className='pt-20'>
             <h3 className='text-[38px] md:text-[52px] font-semibold text-[#E01A4F]' data-aos='fade-up'>Do you need a boost?</h3>
             <h4 className='mb-10 text-[48px]' data-aos='fade-up'>Spotlight your business on the map</h4>
@@ -322,16 +322,16 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className='my-40 md:mx-20 lg:mx-40'>
-        <h3 className='text-[40px] font-semibold' data-aos='fade-up'>Need to know more?</h3>
+      <div className='my-40 mb-80 md:mx-20 lg:mx-40'>
+        <h3 className='text-[2.5rem] sm:px-0 px-4 font-semibold' data-aos='fade-up'>Need to know more?</h3>
         <div className='md:flex gap-20 justify-between mt-14' data-aos='fade-right'>
-          <div className=' '>
+          <div className=' sm:px-0 px-4 '>
 
             <FAQ />
 
           </div>
 
-          <div className='bg-[#fde6a9] p-8 w-full lg:w-[520px] h-[545px]' data-aos='fade-left'>
+          <div className='bg-[#fde6a9] p-8 w-full lg:w-[520px] sm:h-[545px] h-full' data-aos='fade-left'>
             <h3 className='text-left text-4xl mb-10 '>Scan-to-pay</h3>
             <img src={scan} alt="" className='w-full' />
             <div className='flex mt-12 justify-between '>

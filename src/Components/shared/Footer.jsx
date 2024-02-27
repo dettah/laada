@@ -9,15 +9,15 @@ import LinkedIn from '../../assets/LinkedIn.png'
 const Footer = () => {
     return (
         <>
-            <div className='bg-[#0C0C0C] bg-opacity-90 h-[358px] mt-36 px-20 pt-[60px]'>
+            <div className='bg-[#0C0C0C] bg-opacity-90 md:h-[358px]  mt-36  md:px-20 px-4 pt-[60px] '>
 
 
-                <div className=' flex justify-between '>
+                <div className=' flex justify-between flex-col md:flex-row  '>
 
                     <div className='flex items-end' >
                         <Logo />
                     </div>
-                    <div className='flex justify-center gap-20 grow'>
+                    <div className='flex md:justify-center justify-between md:gap-20 md:grow my-5'>
                         <ul className='text-left text-white'>
                             <li>Business</li>
                             <li>About</li>
@@ -47,9 +47,9 @@ const Footer = () => {
                 </div>
 
 
-                <hr className="w-full  mx-auto my-4 bg-white" />
+                <hr className="w-full hidden md:block mx-auto my-4 bg-white" />
 
-                <div className='w-full flex justify-between pt-6'>
+                <div className='w-full flex justify-between sm:flex-row flex-col-reverse items-start pt-6'>
                     <p className=' text-gray-400  '>© Copyright 2023, All Rights Reserved by La’ada</p>
 
                     <div className='flex items-end gap-4'>
