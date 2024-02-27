@@ -118,7 +118,7 @@ export const topMarkets = [
         id: 1,
         name: "Abuja Village Market",
         address: "Ahmadu Bello, Abuja NG",
-        marketImage: "https://images.pexels.com/photos/15658432/pexels-photo-15658432/free-photo-of-people-on-a-local-food-market.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        marketImage: "https://images.pexels.com/photos/20418848/pexels-photo-20418848.jpeg",
 
     },
     {

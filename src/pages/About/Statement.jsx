@@ -57,13 +57,13 @@ const Statement = () => {
         <div>
             <section className='w-full'>
 
-                <h3 className=' text-3xl font-semibold my-20 text-center '>OUR MISSION</h3>
+                <h3 className=' text-5xl font-semibold my-20 text-center '>OUR MISSION</h3>
                 <div className='px-10 md:px-20 md:flex gap-36 w-full'>
 
                     {/* <div className='px-20 flex gap-36'> */}
-                    <div>
-                        <img src={balloon} alt="" className='md:w-[642px]  ' />
-                    </div>
+                    
+                        <img src={balloon} alt="" className='w-[642px]  ' />
+                
                     <div className='text-justify '>
                         <h3 className=' text-3xl mb-16 '>
                             We create happiness for people by building market solutions for people who buy and sell goods.
