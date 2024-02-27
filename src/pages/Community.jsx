@@ -36,14 +36,14 @@ const Community = () => {
     return (
         <div>
             <div className='md:m-20 mx-5 mt-0'>
-                <div className='w-full  bg-cover flex flex-col md:px-36 px-5 justify-center md:h-[480px] py-2 h-fit bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
-                    <h2 className=' text-left md:text-[4.3rem] font-bold text-[40px] drop-shadow-lg '>The Bush Market Community</h2>
+                <div className='w-full  bg-cover flex flex-col md:px-36 px-5 justify-center md:h-[480px] py-10 h-fit bg-no-repeat text-left  text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
+                    <h2 className=' text-left md:text-[4.3rem] font-bold text-[60px] mt-5  drop-shadow-lg '>The Bush Market Community</h2>
 
                     <p className='text-[20px]'>Welcome to a new way to <br /> shop, connect and <br /> experience digital age <br /> with La’ada.</p>
                 </div>
             </div>
-            <div className='text-center'>
-                <h3 className='text-4xl font-bold mb-7 leading-[1.5] '>Stay connected to people & places who share similar <br /> interest as you, enjoy unlimited real-time market <br /> information </h3>
+            <div className='text-center px-10'>
+                <h3 className='text-4xl font-bold mb-7 leading-[1.5]  '>Stay connected to people & places who share similar <br /> interest as you, enjoy unlimited real-time market <br /> information </h3>
                 <div>
                     <button className='text-[#e01a4f] rounded-[6px] px-6 py-[8px] font-bold hover:scale-110 transition-transform duration-300 ease-in-out'>
                         Explore</button>
