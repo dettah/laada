@@ -10,7 +10,7 @@ const MarketCard = ({ title, image, text, showTitle, showButton }) => {
         <h4 className='text-[24px]'>{text}</h4>
 
         {showButton && <Link to={"/ma"}>
-          <a className='py-2 px-3 text-white bg-red-500 rounded-md cursor-pointer'>Contact Us</a>
+          <a className='py-2 px-3 text-white bg-red-500 rounded-md cursor-pointer whitespace-nowrap '>Contact Us</a>
         </Link>}
       </div>
     </div>
