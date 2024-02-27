@@ -125,14 +125,14 @@ export const topMarkets = [
         id: 2,
         name: "Garaki Market",
         address: "Garki, Abuja NG",
-        marketImage: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        marketImage: "https://images.pexels.com/photos/20418868/pexels-photo-20418868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 
     },
     {
         id: 3,
         name: "Wuse Market",
         address: "Wuse, Abuja NG",
-        marketImage: "https://images.pexels.com/photos/1300975/pexels-photo-1300975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        marketImage: "https://images.pexels.com/photos/20418877/pexels-photo-20418877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 
     },
     {
