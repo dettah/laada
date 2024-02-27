@@ -26,7 +26,7 @@ const Statement = () => {
 
         paraText: 'We accomplish incredibly by showing how trustworthy we can be. We work to stay committed to you.',
     }
-    
+
     const transparency = {
         headText: 'Transparency',
 
@@ -55,16 +55,18 @@ const Statement = () => {
     return (
 
         <div>
-            <section className=''>
+            <section className='w-full'>
 
-                <h3 className=' text-3xl font-semibold my-20'>OUR MISSION</h3>
-                <div className=' px-20 flex gap-36'>
+                <h3 className=' text-3xl font-semibold my-20 text-center '>OUR MISSION</h3>
+                <div className='px-10 md:px-20 md:flex gap-36 w-full'>
 
-                {/* <div className='px-20 flex gap-36'> */}
-                    <img src={balloon} alt="" className='w-[642px]' />
+                    {/* <div className='px-20 flex gap-36'> */}
+                    <div>
+                        <img src={balloon} alt="" className='md:w-[642px]  ' />
+                    </div>
                     <div className='text-justify '>
                         <h3 className=' text-3xl mb-16 '>
-                          We create happiness for people by building market solutions for people who buy and sell goods.
+                            We create happiness for people by building market solutions for people who buy and sell goods.
                         </h3>
                         <p className=' text-2xl  '>
                             We are changing the shape of local markets purchase through the solutions we develop,
@@ -93,8 +95,8 @@ const Statement = () => {
                 imageUrl={resilience}
             />
 
-            <div>
-                <img src={circleBox} alt="" />
+            <div className=' w-screen px-2 ' >
+                <img src={circleBox} alt="connecting image" className='w-full' />
             </div>
             <section className='m-20 flex' data-aos='fade-up'>
                 <div className=' h-[300px] w-[600px] bg-[#FCE8ED] py-7 px-14 text-left '>
@@ -106,7 +108,7 @@ const Statement = () => {
 
                 </div>
             </section>
-            
+
             <h3 className='mb-10 decoration-2 text-3xl font-semibold text-left mx-20 underline decoration-[#E01A4F] underline-offset-8'>Latest News</h3>
             <div className='flex justify-between mx-20'>
                 <LatestNewsCard
