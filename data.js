@@ -116,7 +116,7 @@ export const marketCategories = [
 export const topMarkets = [
     {
         id: 1,
-        name: "Abuja Village Market",
+        name: "Bokkos Village Market",
         address: "Ahmadu Bello, Abuja NG",
         marketImage: "https://images.pexels.com/photos/20418848/pexels-photo-20418848.jpeg",
 
@@ -130,8 +130,8 @@ export const topMarkets = [
     },
     {
         id: 3,
-        name: "Wuse Market",
-        address: "Wuse, Abuja NG",
+        name: "Oron Market",
+        address: "Oron, Akwa Ibom NG",
         marketImage: "https://images.pexels.com/photos/20418877/pexels-photo-20418877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 
     },
@@ -144,9 +144,9 @@ export const topMarkets = [
     },
     {
         id: 5,
-        name: "Kado Market",
-        address: "Kado, Abuja NG",
-        marketImage: "https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name: "Zakki Biaam Market",
+        address: "Zakki, Abuja NG",
+        marketImage: "https://images.pexels.com/photos/20419135/pexels-photo-20419135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 
     },
     {
