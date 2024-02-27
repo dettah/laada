@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import HeroBg from '../assets/heroBg.png'
 import market from '../assets/HeroRhombus/Marketplaces.png'
@@ -65,7 +65,7 @@ const CarouselComp = ({ name, image, address }) => {
 
 
 const LandingPage = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  
 
   const responsive = {
     superLargeDesktop: {
@@ -89,6 +89,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     AOS.init({ duration: 600 })
+    AOS.init({ duration: 600 })
   }, [])
 
 
@@ -103,6 +104,9 @@ const LandingPage = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+
+
 
   return (
     <div>
@@ -142,42 +146,43 @@ const LandingPage = () => {
 
         <h2 className='text-[28px] lg:text-[42px] font-semibold mt-4 mb-6'>Top Bush Markets People Visit</h2>
 
+    
         {/* CAROUSEL */}
-
-        <Carousel
-          // responsive={responsive}
-          swipeable={true}
-          draggable={true}
-          // showDots={true}
-          responsive={responsive}
-          // ssr={true} // means to render carousel on server-side.
-          // infinite={true}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlay={true}
-          // autoPlaySpeed={1000}
-          // keyBoardControl={true}
-          // customTransition="all .5"
-          // transitionDuration={500}
-          // containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          arrows={true}
-          // deviceType={this.props.deviceType}
-          // dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-0-px"
-        >
+        
+          <Carousel
+            // responsive={responsive}
+            swipeable={true}
+            draggable={true}
+            // showDots={true}
+            responsive={responsive}
+            // ssr={true} // means to render carousel on server-side.
+            // infinite={true}
+            // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+            autoPlay={true}
+            // autoPlaySpeed={1000}
+            // keyBoardControl={true}
+            // customTransition="all .5"
+            // transitionDuration={500}
+            // containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            arrows={true}
+            // deviceType={this.props.deviceType}
+            // dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-0-px"
+          >
 
           {topMarkets.map(market => (
-            <div key={market.id}>
-              <CarouselComp name={market.name} address={market.address} image={market.marketImage} />
-            </div>
-          ))}
+              <div key = {market.id}>
+                  <CarouselComp name={market.name} address={market.address} image={market.marketImage} />
+              </div>
+            ))}
 
-        </Carousel>
-
+          </Carousel>
+        
         {/* CAROUSEL */}
 
 
-
+      
 
 
         {/* 
