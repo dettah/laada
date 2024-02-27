@@ -61,10 +61,10 @@ const MA = () => {
 
                 <div className='w-[433px] text-left leading-[2.2] '>
                     <h3 className='font-semibold mb-5 text-4xl ' data-aos='fade-up'>
-                        Become a vendor
+                        Feel free
                     </h3>
                     <p className='mb-4 leading-[2] text-2xl' data-aos='fade-up'>
-                        Lorem ipsum dolor sit amet consectetur. Rhoncus commodo eget lectus metus est sed tincidunt enim. Sit praesent gravida elit id eget. Sed mauris lacinia mattis dui.
+                         Feel accomplished knowing you dont't have to worry about the market hassle.
                     </p>
                     <Link to={"/vendor/"}>
 

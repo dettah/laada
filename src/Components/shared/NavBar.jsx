@@ -22,7 +22,7 @@ const NavBar = () => {
       </Link>
 
 
-      <div className='flex items-center gap-8 ' >
+      <div className='hidden lg:flex items-center gap-8 ' >
         <nav className='flex grow gap-5 items-center '>
 
           <NavComm />
@@ -39,7 +39,7 @@ const NavBar = () => {
           </div>
 
         </nav>
-        <div className='flex gap-6'>
+        <div className='hidden lg:flex gap-6'>
 
 
         <Link to={"/reg-form/"}>

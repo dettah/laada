@@ -21,10 +21,16 @@ const Statement = () => {
     }, [])
 
 
-    const dataResilience = {
-        headText: 'Resilience',
+    const trustWorthy = {
+        headText: 'Trustworthy',
 
-        paraText: 'Explore a treasure trove of goodies from nearby sellers. Find everything from handcrafted goods to tasty treats in our special customer section.',
+        paraText: 'We accomplish incredibly by showing how trustworthy we can be. We work to stay committed to you.',
+    }
+    
+    const transparency = {
+        headText: 'Transparency',
+
+        paraText: 'There are no hidden pathways when we are involved. Our system is to collaborate with everyone to build transparent processes and solutions.',
     }
 
     const dataConsistency = {
@@ -34,16 +40,16 @@ const Statement = () => {
     }
 
     const news1 = {
-        title: 'Apps on the go',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, vero?'
+        title: 'Accessing Green Finance',
+        text: 'The World has set some funds to finance projects that are targeted...'
     }
     const news2 = {
-        title: 'The local vendor',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, vero?'
+        title: 'Sugar price in Nigeria hits 5-year high',
+        text: 'The average price of Nigeria has surged to its highest value..'
     }
     const news3 = {
-        title: 'Lorem Ipsum',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, vero?'
+        title: 'Safety storage for farmers',
+        text: 'Nigeria must fix its structural defeciencies limiting productiviy..'
     }
 
     return (
@@ -52,14 +58,17 @@ const Statement = () => {
             <section className=''>
 
                 <h3 className=' text-3xl font-semibold my-20'>OUR MISSION</h3>
-                <div className='px-20 flex gap-36'>
+                <div className=' px-20 flex gap-36'>
+
+                {/* <div className='px-20 flex gap-36'> */}
                     <img src={balloon} alt="" className='w-[642px]' />
                     <div className='text-justify '>
-                        <h3 className=' text-4xl mb-16 '>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor a amet cupiditate repudiandae quae enim nesciunt? Reprehenderit, ab?
+                        <h3 className=' text-3xl mb-16 '>
+                          We create happiness for people by building market solutions for people who buy and sell goods.
                         </h3>
                         <p className=' text-2xl  '>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, vero?
+                            We are changing the shape of local markets purchase through the solutions we develop,
+                            thus translating meaningful impact around local market hubs in Africa.
                         </p>
                     </div>
                 </div>
@@ -68,8 +77,8 @@ const Statement = () => {
             <h2 className='text-3xl mt-40 font-semibold '>CORE VALUES</h2>
 
             <CoreValueCard
-                title={dataResilience.headText}
-                text={dataResilience.paraText}
+                title={trustWorthy.headText}
+                text={trustWorthy.paraText}
                 imageUrl={resilience}
             />
 
@@ -79,8 +88,8 @@ const Statement = () => {
                 imageUrl={consistent}
             />
             <CoreValueCard
-                title={dataResilience.headText}
-                text={dataResilience.paraText}
+                title={transparency.headText}
+                text={transparency.paraText}
                 imageUrl={resilience}
             />
 

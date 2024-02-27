@@ -14,9 +14,12 @@ const CustomerSubHero = ({ text, image }) => {
 
       <p className='text-3xl leading-[1.5] py-10 px-20 '>{text}</p>
 
-      <Link to={"/reg-form/"}>
-        <button className='w-[103px] h-12 bg-[#E01A4F] text-white rounded'>Join now</button>
-      </Link>
+      <div className='flex justify-center '>
+        <Link to={"/reg-form/"}>
+
+          <button className='w-[103px] h-12 bg-[#E01A4F] text-white rounded'>Join now</button>
+        </Link>
+      </div>
     </div>
   )
 }

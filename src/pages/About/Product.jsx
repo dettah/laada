@@ -11,6 +11,7 @@ import phone2 from '../../assets/phone2.png'
 import phone3 from '../../assets/phone3.png'
 import phone4 from '../../assets/phone4.png'
 import phone5 from '../../assets/phone5.png'
+import convenience from '../../assets/Convenience.png'
 import LearnButton from '../../Components/LearnButton'
 
 
@@ -42,7 +43,7 @@ const Product = () => {
                 Services that allows convenience
             </h1>
             <p className='text-[30px] mb-20' >Our platform enables you to expand your interest, connecting you <br /> with relevant people.</p>
-            <img src="" alt="Products image" className='w-[1122px] h-[600px] m-auto' />
+            <img src= {convenience} alt="Products image" className='w-[1122px] h-[600px] m-auto' />
 
             {/* Swift customer interface */}
 

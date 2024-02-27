@@ -2,10 +2,14 @@
  
   margin: 0;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
   font-family: lato, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+h1, h2 {
+  text-align: center;
+}
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,4 +44,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

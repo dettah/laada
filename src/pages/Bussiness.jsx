@@ -15,20 +15,20 @@ const Bussiness = () => {
 
     const businessCardData = {
         title: 'Advertise with Us',
-        text: 'Lorem ipsum dolor sit amet consectetur. Imperdiet aliquam sed eu accumsan ornare. Morbi dolor donec eget diam in cursus arcu. ',
-        text2: 'Vulputate pulvinar vulputate pulvinar vestibulum ut eget libero morbi arcu.',
+        text: 'Business like yours utilize our key data insights and community to their advantage within the competitive business landscapes.',
+        text2: 'Take a step futher by joining over 100 businesses gaining success through us today!',
     }
     const news1 = {
-        title: 'Apps on the go',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, vero?'
+        title: 'Accessing Green Finance',
+        text: 'The World has set some funds to finance projects that are targeted...'
     }
     const news2 = {
-        title: 'The local vendor',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, vero?'
+        title: 'Sugar price in Nigeria hits 5-year high',
+        text: 'The average price of Nigeria has surged to its highest value..'
     }
     const news3 = {
-        title: 'Lorem Ipsum',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, vero?'
+        title: 'Safety storage for farmers',
+        text: 'Nigeria must fix its structural defeciencies limiting productiviy..'
     }
 
     return (
@@ -36,7 +36,7 @@ const Bussiness = () => {
             <div className='w-full  bg-cover flex flex-col px-36 justify-center h-[700px] bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${bussinessHeroBg})` }}>
                 <h2 className='  text-[64px] font-bold '>Business</h2>
 
-                <p className='text-[20px] leading-[1.5]  '>Lorem ipsum dolor sit amet consectetur. <br /> Diam curabitur vitae tellus orci vehicula dignissim tristique. <br /> Fusce aenean leo massa tellus elit morbi suspendisse.</p>
+                <p className='text-[20px] leading-[1.5]  '>We deliver nothing short of growth and excellence <br /> when it comes to business. Building trust has been<br />paramount to partnership and growth.</p>
             </div>
             <div className=' my-32 '>
 
@@ -55,7 +55,7 @@ const Bussiness = () => {
                 <img src={space} alt="" className='rounded' />
                 <div className='px-5'>
                     <h3 className='text-[40px] leading-[1.5] mb-5'>Network and partners</h3>
-                    <p className='text-[25px] leading-[1.5] mb-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatem illum?</p>
+                    <p className='text-[25px] leading-[1.5] mb-5'>Follow our key partners and learn more on what is going on right away.</p>
 
 
                     <Link to={"/network/"}>
