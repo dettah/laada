@@ -13,6 +13,10 @@ import phone4 from '../../assets/phone4.png'
 import phone5 from '../../assets/phone5.png'
 import convenience from '../../assets/Convenience.png'
 import LearnButton from '../../Components/LearnButton'
+import LatestNewsCard from '../../Components/shared/LatestNewsCard'
+import newsImage1 from '../../assets/new1.png'
+import newsImage2 from '../../assets/new2.png'
+import newsImage3 from '../../assets/new3.png'
 
 
 
@@ -35,6 +39,18 @@ const Product = () => {
         text1: "Get market research and shopping done while you relax."
     }
 
+    const news1 = {
+        title: 'Accessing Green Finance',
+        text: 'The World has set some funds to finance projects that are targeted...'
+    }
+    const news2 = {
+        title: 'Sugar price in Nigeria hits 5-year high',
+        text: 'The average price of Nigeria has surged to its highest value..'
+    }
+    const news3 = {
+        title: 'Safety storage for farmers',
+        text: 'Nigeria must fix its structural defeciencies limiting productiviy..'
+    }
 
     return (
 
@@ -43,7 +59,7 @@ const Product = () => {
                 Services that allows convenience
             </h1>
             <p className='text-center text-[30px] mb-20' >Our platform enables you to expand your interest, connecting you <br /> with relevant people.</p>
-            <img src= {convenience} alt="Products image" className='w-[1122px] h-[600px] m-auto' />
+            <img src={convenience} alt="Products image" className='w-[1122px] h-[600px] m-auto' />
 
             {/* Swift customer interface */}
 
@@ -96,6 +112,24 @@ const Product = () => {
                 <img src={phone4} alt="" className='w-[250px] absolute bottom-0 right-[330px] ' />
                 <img src={phone1} alt="" className='w-[250px] absolute right-0 top-0 ' />
                 <button className='bg-[#E01A4F] px-6 py-[8px] font-bold text-white absolute bottom-3 right-3 ' data-aos='zoom-in'>Download App</button>
+            </div>
+            <h3 className='mb-10 decoration-2 text-3xl font-semibold text-left mx-20 underline decoration-[#E01A4F] underline-offset-8'>Latest News</h3>
+            <div className='flex justify-between mx-20'>
+                <LatestNewsCard
+                    heading={news1.title}
+                    text={news1.text}
+                    image={newsImage1}
+                />
+                <LatestNewsCard
+                    heading={news2.title}
+                    text={news2.text}
+                    image={newsImage2}
+                />
+                <LatestNewsCard
+                    heading={news3.title}
+                    text={news3.text}
+                    image={newsImage3}
+                />
             </div>
         </div>
     )
