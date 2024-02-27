@@ -25,7 +25,7 @@ const Com_BushMarket = () => {
                 </div>
                 
                 <div className=' mb-5 text-center '>
-                    <h2 className='lg:text-5xl   font-bold block lg:hidden mb-4 '>Bush Market <br className='lg:block hidden ' /> Community</h2>
+                    <h2 className='text-5xl   font-bold block lg:hidden mb-4  '>Bush Market <br className='lg:block hidden ' /> Community</h2>
                     <p className='lg:pl-[150px]  text-4xl block lg:text-[20px] lg:hidden font-semibold '>From farm to table, Your trusted food network</p>
                 </div>
 
