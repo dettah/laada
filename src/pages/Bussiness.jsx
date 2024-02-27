@@ -34,7 +34,7 @@ const Bussiness = () => {
     return (
         <div className='mb-40'>
             <div className='w-full  bg-cover flex flex-col px-36 justify-center h-[700px] bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${bussinessHeroBg})` }}>
-                <h2 className='  text-[64px] font-bold '>Business</h2>
+                <h2 className='  text-[64px] text-left font-bold '>Business</h2>
 
                 <p className='text-[20px] leading-[1.5]  '>We deliver nothing short of growth and excellence <br /> when it comes to business. Building trust has been<br />paramount to partnership and growth.</p>
             </div>

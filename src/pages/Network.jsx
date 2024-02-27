@@ -35,7 +35,7 @@ const news3 = {
 
       </div>
       <div className='mb-10'>
-        <h3 className='text-[40px] mb-10'>Partners that trust us</h3>
+        <h3 className=' text-center text-[40px] mb-10'>Partners that trust us</h3>
         <div className='flex flex-wrap gap-4 justify-center mb-10'>
           <div className=' rounded-[8px] min-w-[300px] min-h-[162px] font-bold text-3xl bg-[#6B7B93]' ></div>
           <div className=' rounded-[8px] min-w-[300px] min-h-[162px] font-bold text-3xl bg-[#6B7B93]' ></div>
