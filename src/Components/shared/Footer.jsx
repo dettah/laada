@@ -40,7 +40,7 @@ const Footer = () => {
                             <li>Works</li>
                         </ul>
                     </div>
-                    <div className='sm:block flex justify-between '>
+                    <div className='block '>
                         <img src={AppStore} alt="App Store" className='mb-4' />
                         <img src={PlayStore} alt="Play Store" />
                     </div>
@@ -53,10 +53,10 @@ const Footer = () => {
                     <p className=' text-gray-400  '>© Copyright 2023, All Rights Reserved by La’ada</p>
 
                     <div className='flex  items-end gap-4'>
-                        <img src={X} alt="" />
-                        <img src={FB} alt="" />
-                        <img src={Instagram} alt="" />
-                        <img src={LinkedIn} alt="" />
+                        <img src={X} alt="X formerly Twitter" />
+                        <img src={FB} alt="facebook" />
+                        <img src={Instagram} alt="instagram" />
+                        <img src={LinkedIn} alt="linkedin" />
                     </div>
 
                 </div>

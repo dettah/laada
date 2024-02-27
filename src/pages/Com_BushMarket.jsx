@@ -17,14 +17,20 @@ const Com_BushMarket = () => {
 
 
         <div>
-            <section className='mx-10'>
-                <div className=' bg-cover flex flex-col pl-[400px] rounded-[10px] justify-center h-[329px] m-20 bg-no-repeat  tracking-widest' style={{ backgroundImage: `url(${heroImage})` }}>
+            <section className='md:mx-10 mx-5 overflow-x-hidden rounded'>
+                <div className=' bg-cover flex flex-col lg:pl-[350px] xl:pl-[400px] rounded-[10px] justify-center md:h-[329px] w-full lg:m-20 md:mb-16 mb-16 bg-no-repeat h-[6rem]  tracking-widest' style={{ backgroundImage: `url(${heroImage})` }}>
 
-                    <h2 className='text-5xl font-bold mb-4'>Bush Market Community</h2>
-                    <p className='lg:pl-[150px] text-[20px]'>From farm to table, Your trusted food network</p>
+                    <h2 className='lg:text-4xl xl:text-5xl hidden lg:block font-bold mb-4'>Bush Market Community</h2>
+                    <p className='lg:pl-[150px] text-[20px] hidden lg:block font-semibold  '>From farm to table, Your trusted food network</p>
                 </div>
-                <div className=' border-b-2 mx-[7.5rem] pb-[180px] border-[#BFBFBF] '>
-                    <p className=' pt-8 text-2xl leading-[2.5]'>At Bush Market, we're more than just a marketplace , we're your digital neighborhood hub. Join our thriving community to stay in the loop on local insights, market trends, and exciting happenings in your area. Whether you're looking to buy, sell, or simply connect with neighbors, Bush Market has you covered. Sign up now and become part of our vibrant community</p>
+                
+                <div className=' mb-5 text-center '>
+                    <h2 className='lg:text-5xl   font-bold block lg:hidden mb-4 '>Bush Market <br className='lg:block hidden ' /> Community</h2>
+                    <p className='lg:pl-[150px]  text-4xl block lg:text-[20px] lg:hidden font-semibold '>From farm to table, Your trusted food network</p>
+                </div>
+
+                <div className=' border-b-2 md:mx-[7.5rem] pb-[180px] border-[#BFBFBF] mx-5 '>
+                    <p className=' pt-6 text-2xl leading-[2.5]'>At Bush Market, we're more than just a marketplace , we're your digital neighborhood hub. Join our thriving community to stay in the loop on local insights, market trends, and exciting happenings in your area. Whether you're looking to buy, sell, or simply connect with neighbors, Bush Market has you covered. Sign up now and become part of our vibrant community</p>
                 </div>
             </section>
             <section>
@@ -42,7 +48,7 @@ const Com_BushMarket = () => {
                     </div> */}
                 </div>
 
-                
+
                 <div className='grid gap-y-6 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-6 w-full px-20 mt-6'>
                     {marketsPreview.map(item => (
                         <div key={item.id}>

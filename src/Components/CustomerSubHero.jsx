@@ -6,10 +6,10 @@ const CustomerSubHero = ({ text, image }) => {
 
 
   return (
-    <div className='sm:px-20 px-5'>
-      <div className='p-10'>
+    <div className='sm:px-20 px-5 md:mb-7'>
+      <div className='md:p-10'>
 
-        <img src={image} alt="" className='m-auto w-[1000px]' />
+        <img src={image} alt="hero section" className='m-auto w-[1000px]' />
       </div>
 
       <p className='text-3xl leading-[1.5] py-10 sm:px-20 '>{text}</p>
