@@ -50,6 +50,12 @@ const NavComm = () => {
         <div className="absolute top-full left-0 mt-1 w-fit bg-[#EBEBEB] border border-gray-200 rounded-md shadow-lg z-10 flex flex-col ">
           {/* please enter and update dropdown content here */}
 
+          <Link to={"/community/"}>
+
+            <button className='border border-t-0 border-white text-[#E01A4F] p-4 text-xl hover:bg-white w-80'>
+              Community
+            </button>
+          </Link>
 
           <Link to={"/customer/"}>
 

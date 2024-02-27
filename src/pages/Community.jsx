@@ -35,14 +35,14 @@ const Community = () => {
 
     return (
         <div>
-            <div className='m-20 mt-0'>
+            <div className='md:m-20 mx-5 mt-0'>
                 <div className='w-full  bg-cover flex flex-col px-36 justify-center h-[480px] bg-no-repeat text-left text-white tracking-widest' style={{ backgroundImage: `url(${community})` }}>
                     <h2 className='  text-[64px] font-bold drop-shadow-lg '>The Bush Market Community</h2>
 
                     <p className='text-[20px]'>Welcome to a new way to <br /> shop, connect and <br /> experience digital age <br /> with La’ada.</p>
                 </div>
             </div>
-            <div>
+            <div className='text-center'>
                 <h3 className='text-4xl font-bold mb-7 leading-[1.5] '>Stay connected to people & places who share similar <br /> interest as you, enjoy unlimited real-time market <br /> information </h3>
                 <div>
                     <button className='text-[#e01a4f] rounded-[6px] px-6 py-[8px] font-bold hover:scale-110 transition-transform duration-300 ease-in-out'>
