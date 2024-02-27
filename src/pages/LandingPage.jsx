@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import HeroBg from '../assets/heroBg.png'
 import market from '../assets/HeroRhombus/Marketplaces.png'
@@ -265,7 +265,7 @@ const LandingPage = () => {
             <Link to={"/community/"}>
 
               <button className='flex text-[#E01A4F] items-center gap-2 border-none'>Learn more
-                <img src={arrow} alt="" />
+                <img src={arrow}  alt="" />
               </button>
             </Link>
           </div>
